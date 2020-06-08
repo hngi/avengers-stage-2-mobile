@@ -1,0 +1,275 @@
+1. One rabbit saw 6 elephants while going towards River. Every elephant saw 2 monkeys going towards the river. Every monkey holds one tortoise in their hands.
+How many animals are going towards the river?
+A) 14
+B) 11
+C) 8
+D) 5
+Answer:5 
+Explanation: From the given data, 1 rabbit is going towards the river not the 6 elephants, and these six elephants saw 2 monkeys going towards the river, with each monkey holding1 tortoise.
+So 1 rabbit + 2 monkeys + 2 tortoise = 5
+
+2. 	Look at this series: 12, 11, 13, 12, 14, 13, … What number should come next?
+A. 10
+B. 16
+C. 13
+D. 15
+Answer: Option D. This is an alternating number of subtraction series. First, 1 is subtracted, then 2 is added.
+
+
+3. 'Rhythm of eyes' city name in India?
+Chennai
+Nainital
+Srinagar
+ Karnataka
+Answer: B) Nainital
+Explanation: 'Rhythm of eyes' logically means Nainital in India.
+The other cities are:
+No Zip - Chennai
+Mr. City - Srinagar
+Do Acting - Karnataka.
+
+
+4. Question: A man lives on the 100th floor of an apartment building. On rainy days he rides the elevator all the way up. However, on sunny days, he goes half way and takes the stairs the rest of the way. Why?
+Answer
+The man is short and can only reach the button for the 50th floor on the elevator. On rainy days, he uses his umbrella handle.
+
+5. Question: A man and his son were in an automobile accident. The man died on the way to the hospital, but the boy was rushed into surgery. The emergency room surgeon said, “I cannot operate, because that is my son!” How was this possible?
+Answer
+The emergency room surgeon was his mother.
+
+6. Question: A man dressed in all black is walking down a country lane. Suddenly, a large black car with no lights on comes around the corner and screeches to a halt. How did the car’s driver know he was there?
+Answer
+It was day time.
+
+7. Question: Robert, my neighbor, a forty-five-year-old blacksmith is seven feet tall, and eats all day long. What does he weigh?
+Answer
+Iron
+
+8. Question: Complete this series of numbers: 9 = 4, 21 = 9, 22 = 9, 24 = 10, 8 = 5, 7 = 5, 99 = 10, 100 = 7, 16 =?, 17 =?
+Answer
+16 = 7 and 17 = 9 [(Each number equals the number of letters in their spelling, i.e. 16 (sixteen) is 7 and 17 (seventeen) is 9.]
+
+9. Question: There are three important rooms in a house. The first one is filled with money. The second one is filled with important papers. The third one is filled with jewelry. One day all of these rooms burst into fire. Which room did the policemen put out the fire in first?
+Answer
+None of them, because policemen do not put out fires; firemen do.
+
+10. Question: Why are 1968 pennies worth more than 1967 pennies?
+Answer
+Because there is one more penny in 1968 pennies than in 1967 pennies.
+
+11. Question: A man has a fox, a chicken, and a sack of grain. He must cross a river, but cannot carry all of them at once. If he leaves the fox with the chicken, the fox will eat the chicken. However, if he leaves the chicken with the grain, the chicken will eat the grain. How can he get all three across safely?
+Answer
+He can take the chicken over first. Then he can go back and bring the grain next carrying the chicken for this trip. He leaves the chicken, and takes the fox to wait with the grain. Then he goes back to the other side and retrieves the chicken.
+
+
+12. Questions: There are eight men sitting on a couch. Three legs break and six men leave. How many legs are remaining?
+Answer
+Five; the legs of the two remaining men (4) and the remaining couch leg.
+
+
+13. Question: You are driving a bus. When you begin your route, there is an old woman named Mrs. Smith and a young boy named Raymond are on the bus. At the first stop, the old woman leaves, and a salesman, named Ed, enters. At the next stop, Jack and his sister Jill get on, as well as three women with shopping bags. The bus travels fifteen minutes, then stops and Raymond gets off and a man and his wife get on. Next, a woman with a bird in a cage gets on the bus. What is the name of the bus driver?
+Answer
+Well, remember that you are the one driving the bus!
+
+14. Question: What is the maximum number of times a single page of a newspaper can be folded in half by hand?
+Answer
+Only once, because after that you will be folding it into quarters, eighths, etc.
+
+15. Question: A fishing boat, with a ladder in it, is leaning against a wall at the harbor. There are 5 oars and 2 fishing nets in the trawler. The distance between two consecutive steps on the ladder is 1 meter. If waves lashing against the wall rise a half meter in every half hour, how long will it take before 6 steps of the ladder are under the waves?
+Answer
+Since the fishing boat rises with the waves, no steps will go under water.
+
+16. Question: You ask the sales associate in a hardware store, “How much will one cost?””Twenty cents,” she replies.”And how much will twelve cost me?” you ask.”Forty cents,” she replies.
+“OK, I’ll take one hundred and twelve.”
+How much did you pay?
+Answer
+Answer: Sixty cents, because you needed three numbers for your house number – 112.
+
+17. Question: On a Sunday morning, the oldest girl in a family was murdered. The father was reading the paper, the mother was in the kitchen cooking breakfast, and the girl’s brother was playing video games. Uncle George was visiting and was out getting the mail. Who murdered the girl?
+Answer
+Uncle George, because it was a Sunday and mail is not delivered on Sunday.
+
+18. Question: If you divide 30 by half and add ten, what do you get?
+Answer
+70. Half is .5. If you divide 30 by 0.5, you get 60. Add ten and you have 70.
+
+19. Kate and Lisa decided to play tennis against each other. They bet 100ksh on each game they played. Kate won three bets and Lisa won 500ksh. How many games did they play?
+Answer: Eleven. Because Lisa lost three games to Kate, she had lost 300ksh (100ksh per game). So, she had to win back that 300ksh with three more games, then win another five games to win 500ksh.
+
+
+20. If five cats can catch five mice in five minutes, how long will it take one cat to catch one mouse?
+Answer: Five minutes. Using the information we know, it would take one cat 25 minutes to catch all five mice (5×5=25). Then working backward and dividing 25 by five, we get five minutes for one cat to catch each mouse.
+
+21. Find the product of 496 and 395.   Answer:  Break one of the numbers down to its place value parts. 
+395= 300 +90+5
+Hence 496×(300+90+5). This means that you use 496 to multiply each number in the bracket and then add the results:  
+496 × 300 = 148,800
+496 × 90 = 44,640
+496 × 5 = 2, 480
+
+
+
+
+22. Which word does NOT belong with the others?
+A. index
+B. glossary
+C. chapter
+D. book
+Answer: D. Book. Rest are all parts of a book.
+
+
+23. Which word is the odd man out?
+A. trivial
+B. unimportant
+C. important
+D. insignificant
+Answer: C. Important. Remaining are synonyms of each other.
+
+
+24.  Which word does NOT belong with the others?
+A. wing
+B. fin
+C. beak
+D. rudder
+Answer: C. Beak. Rest are parts of an aero plane.
+
+25.  Which word is the odd man out?
+A. hate
+B. fondness
+C. liking
+D. attachment
+Answer: A. hate. Rest is positive emotions.
+
+26. Pick the odd man out?
+A. just
+B. fair
+C. equitable
+D. biased
+Answer: D. Biased. The others signify honesty.
+
+27. CUP : LIP :: BIRD : ?
+A. GRASS
+B. FOREST
+C. BEAK
+D. BUSH
+Answer: C. BEAK. You drink out of a cup with your lips. Similarly, birds bite grass with their beaks.
+
+
+28. Paw : Cat :: Hoof : ?
+A. Lamb
+B. Horse
+C. Elephant
+D. Tiger
+Answer: B. Horse. Cat’s feet are called paws and horse’s are called hoofs.
+
+
+29. Safe : Secure :: Protect :
+A. Lock
+B. Guard
+C. Sure
+D. Conserve
+Answer: B. Guard
+
+30. Melt : Liquid :: Freeze :
+A. Ice
+B. Solid
+C. Condense
+D. Push
+Answer: B. Solid
+
+
+31. Parts : Strap :: Wolf :
+A. Flow
+B. Animal
+C. Wood
+D. Fox
+Answer: Flow. The word Parts can also be used to form Strap. Wolf can also form Flow.
+
+
+32. A……. of cattle
+Flocks
+Swan 
+Herds
+Band
+Answer:  C. It is herds of cattle
+
+33. Choose what number represents the Roman numeral: LXI
+51
+98
+61
+20
+Answer is C. L is 50, X is 10, I is 1. Hence, 50+10+1=61.
+
+
+34. In how many ways can 8 objects be arranged from 9 objects? 
+1,290,870 ways
+1,814,400 ways
+1,360,911 ways
+2,335,623 ways
+Answer is B. 10!/(10-8)! = 10×9×8×7×6×5×4×3×2×1 / 2×1 = 1,814,400.
+
+35. Solve the equation 2x^2 + 7x -4=0 and what are your values for x?
+x=½ and 4
+x=-½ and -4
+x=½ and -4
+x=-½ and 4
+Answer is C. (2x-1)(x-4) = 0; 2x-1 =0 or x+4=0; x=½ and -4.
+
+
+36. Translate the verbal expression into an equation: The quotient of a number and three is four
+x*3=4
+x^3=4
+x/3=4
+x-3=4
+Answer is C. A quotient is a result obtained by dividing one quantity by another. Hence, we divided the unknown number by 3 giving us 4.
+
+
+37. Which number is equivalent to 5^3 / 5^0 ?
+25
+125
+5
+625
+Answer is B. 5^3 is 125, 5^0 is 1. The division gives 125.
+
+
+38. 6. What is |-25|?
+-25
+25
+1
+0
+Answer is B. The bar sign nullifies the minus sign. Hence, 25 stands on its own.
+
+
+39. Which number should come next in the pattern?
+37, 34, 31, 28
+28
+3
+25
+35
+
+Answer: C, the numbers are decreasing by 3
+
+40. What number best completes the analogy:
+8:4 as 10:
+
+ 3
+ 7
+24
+5
+Answer is D, because 4 is half of 8, and 5 is half of 10.
+
+
+41. If 10 people can do a piece of work in 5 days, working 2 hours a day, how long will 2 people take to do the same work, working 5 hours a day?
+8
+5
+10
+12
+Answer is C, because people 1 / ( no. of days x time in hours)
+
+42. Divide 50 by half, add 20
+120
+45
+70
+25
+Answer is A. 
+
