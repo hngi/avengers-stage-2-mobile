@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-hdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-mdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xxxhdpi/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/Pages/NameLog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1d38lLplVY2VTRIhzEx5GK3MBAr" />
   <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xxxhdpi" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-xxxhdpi" />
+      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-xxhdpi" />
+      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-xhdpi" />
+      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-mdpi" />
+      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-hdpi" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="" />
+      <created>1591642566510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591642566510</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1591642710360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591642710360</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
