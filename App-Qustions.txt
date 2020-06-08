@@ -1,0 +1,66 @@
+
+Stage 1
+Lets discover who you are or who you are likely to be 
+Self assessment questions 
+What is my passion?: your passion is what you like and have interest for?
+Among my friends and associate, what particular things do they like about me,] that distinguished me from them?
+What sect of persons do I have interest on that when I see them, I am inspired and wants to be as them?
+
+Stage 2
+Topic - Find A purpose- 
+Description –( The Channel to doing the right thing )
+ quote –( If we did all the things we are capable of doing, we would literally outstand ourselves “Thomas .A. Edison” )
+Let’s Play (Button)
+Qus. 
+1. Why am I here?
+2. What potential do I have?
+3. What am I capable of doing?
+4. By what process can I maximize my ability?
+Ans. Great (user-name) we found your purpose;  Your purpose of living is to glorify God,  to be responsible to yourself,  respond to others. And enrich your generation with your gift 
+
+
+Stage 3 
+Topic - ASSOCIATION POWER
+Description- Like minds attracts 
+Quote - The human brain can be likely to that of a battery cell, when two or more batteries are connected together, they tend to produce more energy than a single cell “Napoleon Hill”
+Let’s Play (Button)
+1.	Who do I spend time with?
+Answer1: Mentor, Friends, Family, Neighbors
+2.	What are they doing to me?
+Answer2: Encourage my passion, discourage my passion, I don’t Know …etc  
+3.	What have they got me thinking?
+Answer3: Positive things, Negative things,  Irrelevant things, 
+4.	What have they got me talking?
+Answer4: about my dreams, about their dreams, nothing serious etc..
+5.	Where have they got me going?
+Answer5: don’t Know, towards my dreams / A promising Future, towards their dreams etc…
+
+Results 
+		def Option1():
+1.	If answer option 1= Metor, Encourage my passion, Positive Things, about my dreams, towards my dreams 
+print = success and failure are communicable disease; either of them can be contracted by associating closely with anyone suffering from them. 
+Congratulations (User-name) you are with the right company and you have 80% of succeeding in life.
+		
+
+
+2.	def Option2():
+	If answer option 2= Friends, Encourage my passion, Negative things, about their dreams, don’t know.
+Print= Good people will hardly establish a close relationship with you when they see negative influence around you.
+Congratulations (User-name) you have 30-50% of succeeding in life to boost your chance of success in life, consider moving with people who will get you thinking Positively and contribute positively to your life. 
+
+3.	def Option3():
+	If answer option 3= Family, Encourage my passion, positive things, about my breams, towards my dream/A promising Future.
+Print= pay the price to stay in the presence of extraordinary people
+Congratulations (User-name) you are with the right company, have 50-65% of succeeding in life to boost your chance of success  to 80-100%, consider paying the price to stay in the presence of extraordinary people. Get a mentor(s).  
+
+
+4.	def Option4():
+	If answer option 4= Neighbors, I don’t Know, Irrelevant things, nothing serious, don’t Know.
+Print= Don’t fool yourself, bad company will destroy you
+You not succeed (User-name) you are spending your time with the wrong company of people. You have 5-15% of succeeding in life. 
+
+Hah! Don’t cry, you can boost your chance of success to 80-100%, if you spend time with mentors, be around friends who challenges you and, spend time on positive things and concentrate more on your dreams. Go on, have a great life. 
+
+The End 
+REPLAY <- > CLOSE 
+
