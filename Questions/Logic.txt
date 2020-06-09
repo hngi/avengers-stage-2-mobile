@@ -1,0 +1,131 @@
+1.A certain contraceptive pill company used to produce pills that would be harmful to 1 in every 7000 women(0.014%) When the pill got upgraded it could harm 2 in every 7000 women(0.0028%). by how much did the damage increase.
+a) 100%
+b) 0.014%
+c) 50%
+d) 2%
+ans ==> b. The damage increased by 0.014%
+ 
+2. Two school children, who were all tangled up in their reckoning of the days of the week, paused to straighten matters out over a circus poster, when little Priscilla, who was hinting for an invitation to the show, remarked to John; "When the day after tomorrow is yesterday, 'today' will be as far from Sunday as that day was which was 'today' when the day before yesterday was 'tomorrow"
+ On what day of the week did this puzzling prattle occur?
+a) Monday
+b)Thursday
+c)Saturday
+d)Sunday
+
+ans ==> d.) Sunday
+It is evident that the children were so befogged over the calendar that they had started to school with their books on Sunday morning! For it is plain that when the day after tomorrow is yesterday, today will be three days hence, just as when the day before yesterday was tomorrow carries us back three days from now, which must be Sunday, to be midway between the two "todays"
+
+
+3.Set A = (1,3,5,7------------297,299 -150 odd numbers). How many ways are there to choose exactly 18 numbers from set A such that their sum is 191?
+a) 0
+b) 1
+c) 2
+d) 3
+
+ans ==> a) 0 number of ways. There is no way of adding 18  odd numbers to give an odd number
+
+4.Mangleshacharya was born in 1357 B.C. He had lived one-third of his life as a boy, one-fifth of his life as a youth, one-fourth of his life as a man and the remaining 39 years as an old man. Which year did he die?
+a) 1177 B.C
+b) 1537 B.C
+c) 1396 B.C
+d) none
+ ans==> a) 1177 B.C
+ 
+5.The height of a certain flagpole is 33 feet. Grease is applied to the pole. A monkey attempts to climb the pole. It climbs 5 feet every second but slips down 4 ft in the next second. When will the monkey reach the top of the flagpole?
+
+a)60
+b)30
+c)57
+d)20
+
+ans ==> c) 57 seconds
+
+Since monkey climbs 5 feet in 1st second and slips 4 feet in the next thus the monkey gains 1 ft. net in every two seconds.
+However, when it has reached 28ft, in the next jump (5ft upwards) it will reach the top.
+It will take 28*2 = 56 seconds to reach 28ft & then 1 sec to reach the top.
+Hence, 57 seconds is the correct answer.
+
+
+6. When the number 153,810 is divided by n, for which n is the remainder largest ? 
+a)2
+b)5
+c)6
+d)8
+
+ans ==> d) 8
+only 8 gives a remainder after dividing the number
+
+7. In a shop, there are 4 dolls of different heights P,Q,R and S. S is neither as tall as P nor as short as R. Q is shorter than S but taller than R. If Kittu wants to purchase the tallest doll, which one should she purchase?
+a)  Only P
+b)  Only S
+c)  Either P or S
+d)  Either Q or S
+
+ans == > a
+
+S is not as tall as P, means S is shorter than P, So S<P.
+S is not as short as R, S is taller than R, So S>R.
+Q is shorter than S but taller than R. So we get, R<Q<S. So P is tallest from the above conditions. Hence answer is (a) option.
+
+
+8.In how many ways can the members be arranged around a circle so that there is exactly one female between the two sisters present in a group of 20  members?
+a) 17!
+b) 18!
+C) 18!*2
+D) 20!
+
+ANS ==> 18!*2
+18 members can be arranged around a circle in 17! ways. There are exactly 18 places where the two sisters can be arranged. The sisters can be arranged in 2! ways. 
+Therefore, the total number of ways 17! * 2! * 18 = 2 * 18!
+
+9.Pointing towards Ayo, Sola said,” The father of her brother is the only son of my grandfather.” How is Ayo related to Sola?
+
+A) sister
+B) Brother
+C) Mother
+d) Aunt
+
+ans ==> Sister
+
+The father of her brother means her own father and the only son of my grandfather means my father. Therefore, Ayo’s father is also the father of Sola. Hence, Ayo is related as sister to Sola.
+
+10 6 people Ade, Bola, Ope, Peter, emeka and Rafiat have the following attributes.
+        1. Ade is richer than Bola, but shorter than Rafiat.
+        2. Bola is richer than Emeka but taller than Rafiat.
+        3.Ope is poorer than Peter and taller than Ade.
+        4. Peter is poorer as well as shorter than Emeka.
+        5. Emeka is poorer as well as shorter than Ade.
+        6. Rafiat is richer than Ade and taller than Ope
+        
+        Who is the richest person out of the given 6 persons?
+A) Rafiat
+B) Peter
+C) Ope
+D) Ade
+
+ans ==> A) Rafiat.
+
+Ranking of two attributes is given below is descending order:
+1. (Richest to Poorest) Rafiat- Ade- Bola- Emeka- Peter- Ope
+2. (Height) Bola- Rafiat- Ope- Ade- Emeka- Peter
+Clearly, R is the richest.
+
+11)The sum of the incomes of Ade and Bola is more than that of Charles and Dare together. The sum of the Incomes of Ade and Bola is the same as that of Bola and Date taken together. Moreover, Ade earns half as much as the sum of the incomes of Bola and Dare?
+Whose income is the highest?
+A)Ade
+B) Bola
+C) Charles
+D) Dare
+
+ans ==>B
+
+Lets take Ade, Bola, Charles and Dare to be A, B, C and D respectively.
+We have  (A+B) > (C+D)    (1)
+               (A+C) = (B+D)    (2)
+               A = 1/2 (B+D)     (3)
+Putting the value of A in (2) statement we get A=C
+Since (A+B) > (C+D) and A = C so B > D
+Thus from (3) we get B > A ans so B > C. Thus clearly B has the highest income.
+
+
+
