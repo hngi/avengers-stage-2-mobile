@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/assets/fonts/Lato-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/assets/fonts/Lato-Regular.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/lib/Pages/NameLog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/Pages/NameLog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/main.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591699545604</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1591703126118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591703126118</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
