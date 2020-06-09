@@ -10,7 +10,7 @@ IQQuestion("What is it that is greater than God?
 more Evil than the Devil, 
 the Rich Wants it and 
 the poor man have it ",
-["No Option"], 
+["Ha! think is out"], 
 "Answer: Nothing. 
 Nothing Evil than the Devil, The rich need nothing the poor have nothing."),
 
@@ -20,5 +20,5 @@ IQQuestion("Hom many times can you subtract 10 from 100? ",
 
 IQQuestion("Which number should come next in the pattern?
 37, 34, 31, 28",
-["No Option"], 
+["Ha! think is out"], 
 "Answer: 25, the numbers are decreasing by 3"),
