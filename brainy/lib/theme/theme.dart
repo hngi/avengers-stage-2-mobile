@@ -17,16 +17,16 @@ final themeLight = ThemeData(
       headline1: TextStyle(
           fontSize: 40,
           color: Colors.white,
-          fontFamily: "Loto",
+          fontFamily: "Lato",
           fontWeight: FontWeight.bold),
       headline2:
-          TextStyle(fontSize: 30, color: Colors.white, fontFamily: "Loto"),
+          TextStyle(fontSize: 30, color: Colors.white, fontFamily: "Lato"),
       headline3:
-          TextStyle(fontSize: 20, color: Colors.white, fontFamily: "Loto"),
+          TextStyle(fontSize: 20, color: Colors.white, fontFamily: "Lato"),
       headline4:
-          TextStyle(fontSize: 18, color: Colors.white, fontFamily: "Loto"),
+          TextStyle(fontSize: 18, color: Colors.white, fontFamily: "Lato"),
       bodyText1:
-          TextStyle(fontSize: 18, color: Colors.white, fontFamily: "Loto"),
+          TextStyle(fontSize: 18, color: Colors.white, fontFamily: "Lato"),
       bodyText2:
-          TextStyle(fontSize: 14, color: Colors.white, fontFamily: "Loto"),
+          TextStyle(fontSize: 14, color: Colors.white, fontFamily: "Lato"),
     ));
