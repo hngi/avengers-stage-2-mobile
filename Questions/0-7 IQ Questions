@@ -1,18 +1,9 @@
 Brain racking questions
-1.How can you drop a raw egg on a concrete floor without cracking it?
-ANs-The egg won't crack the concrete floor.
-
-2. A person lived 3 days in the hospital and was absolutely fine. However he had to be carried out. How is that possible
-Ans- It was a newborn baby
-
-3. How can you lift an Elephant with one hand?
-Ans-It is not a problem since you will never find an Elephant with one hand.
-
-4. One man was 25 years old in 2000 and 20 years old in 2005. How is that possible?
-Ans-The man lived BC
-
-5. How do you convert your three matchsticks into number 6?
-Ans- By making a roman numeral VI.
+IQQuestion("How can you drop a raw egg on a concrete floor without cracking it?", ["No option for this"], "The answer is egg won't crack the concrete floor."),
+IQQuestion("A person lived 3 days in the hospital and was absolutely fine. However he had to be carried out. How is that possible", ["No option for this"], "The answer is a newborn baby"),
+IQQuestion("How can you lift an Elephant with one hand?", ["No option for this"], "Answer-It is not a problem since you will never find an Elephant with one hand."),
+IQQuestion("One man was 25 years old in 2000 and 20 years old in 2005. How is that possible?", ["No option for this"], "The answer is the man lived BC"),
+IQQuestion("How do you convert your three matchsticks into number 6?", ["No option for this"], "The answer is by making a roman numeral VI."),
 
 6. How can a man go 8 days without sleep?
 Ans- By sleeping during the night time
