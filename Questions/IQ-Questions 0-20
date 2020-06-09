@@ -97,42 +97,9 @@ C. Elephant
 D. Tiger
 Answer: B. Horse. Cat’s feet are called paws and horse’s are called hoofs.
 
-15. Safe : Secure :: Protect :
-A. Lock
-B. Guard
-C. Sure
-D. Conserve
-Answer: B. Guard
-
-16. Melt : Liquid :: Freeze :
-A. Ice
-B. Solid
-C. Condense
-D. Push
-Answer: B. Solid
-
-
-17. Choose what number represents the Roman numeral: LXI
-51
-98
-61
-20
-Answer is C. L is 50, X is 10, I is 1. Hence, 50+10+1=61.
-
-18. What is it that is greater than God?
-more Evil than the Devil, 
-the Rich Wants it and 
-the poor man have it
-Ans. Nothing. 
-Nothing Evil than the Devil, The rich need nothing the poor have nothing. 
-
-19. Hom many times can you subtract 10 from 100?
-a. 5 times 
-b. 10 times 
-c. 1 times only 
-b. 100 times 
-Answer is C - The next times you will be subtracting from 90. 
-
-20. Which number should come next in the pattern?
-37, 34, 31, 28
-Answer: 25, the numbers are decreasing by 3
+IQQuestion("Safe : Secure :: Protect :", ["Lock","Guard","Sure","Conserve"], "Answer: Guard")
+IQQuestion("Melt : Liquid :: Freeze :", ["Ice","Solid","Condense","Push"], "Answer: Solid")
+IQQuestion("Choose what number represents the Roman numeral: LXI", ["51","98","61",20"], "Answer: 61")
+IQQuestion("What is it that is greater than God? more Evil than the Devil, the Rich Wants it and the poor man have it", ["Sorry, I cannot give you an option for this"], "Answer: Nothing Evil than the Devil, The rich need nothing the poor have nothing") 
+IQQuestion("How many times can you subtract 10 from 100",["5 times","10 times ","1 times only","100 times"],["Sorry, I cannot give you an option for this"], "Answer: The next times you will be subtracting from 90")
+IQQuestion("Which number should come next in the pattern? 37, 34, 31, 28,.."), ["Sorry, I can't give you an option for this"], "Answer: 25, the numbers are decreasing by 3")
