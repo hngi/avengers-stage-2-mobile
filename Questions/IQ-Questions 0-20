@@ -63,46 +63,12 @@ Five; the legs of the two remaining men (4) and the remaining couch leg.
 Answer
 Only once, because after that you will be folding it into quarters, eighths, etc.
 
-10. Question: If you divide 30 by half and add ten, what do you get?
-Answer
-70. Half is .5. If you divide 30 by 0.5, you get 60. Add ten and you have 70.
-
-
-11. Which word does NOT belong with the others?
-A. index
-B. glossary
-C. chapter
-D. book
-Answer: D. Book. Rest are all parts of a book.
-
-12. Pick the odd man out?
-A. just
-B. fair
-C. equitable
-D. biased
-Answer: D. Biased. The others signify honesty.
-
-13. CUP : LIP :: BIRD : ?
-A. GRASS
-B. FOREST
-C. BEAK
-D. BUSH
-Answer: C. BEAK. You drink out of a cup with your lips. Similarly, birds bite grass with their beaks.
-
-
-14. Paw : Cat :: Hoof : ?
-A. Lamb
-B. Horse
-C. Elephant
-D. Tiger
-Answer: B. Horse. Cat’s feet are called paws and horse’s are called hoofs.
-
-15. Safe : Secure :: Protect :
-A. Lock
-B. Guard
-C. Sure
-D. Conserve
-Answer: B. Guard
+IQQuestion("If you divide 30 by half and add ten, what do you get? ", ["No option on this"], "The answer is 70. Half is 0.5. If you divide 30 by 0.5, you get 60. Add ten and you have 70."),
+IQQuestion("Which word does NOT belong with the others? ", ["index","glossary","chapter","book"], "The answer is D. Book. Rest are all parts of a book."),
+IQQuestion("Pick the odd man out? ",["just","fair","equitable","biased"], "The answer is D. Biased. The others signify honesty."),
+IQQuestion("CUP : LIP :: BIRD : ?", ["GRASS","FOREST","BEAK","BUSH"], "The answer is C. BEAK. You drink out of a cup with your lips. Similarly, birds bite grass with their beaks."),
+IQQuestion("Paw : Cat :: Hoof : ?", ["Lamb","Horse","Elephant","Tiger"], "The answer is B. Horse. Cat’s feet are called paws and horse’s are called hoofs."),
+IQQuestion("Safe : Secure :: Protect :", ["Lock","Guard","Sure","Conserve"], "The answer is B. Guard"),
 
 16. Melt : Liquid :: Freeze :
 A. Ice
