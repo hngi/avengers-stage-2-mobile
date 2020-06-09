@@ -4,18 +4,9 @@ IQQuestion("A person lived 3 days in the hospital and was absolutely fine. Howev
 IQQuestion("How can you lift an Elephant with one hand?", ["No option for this"], "Answer-It is not a problem since you will never find an Elephant with one hand."),
 IQQuestion("One man was 25 years old in 2000 and 20 years old in 2005. How is that possible?", ["No option for this"], "The answer is the man lived BC"),
 IQQuestion("How do you convert your three matchsticks into number 6?", ["No option for this"], "The answer is by making a roman numeral VI."),
+IQQuestion("How can a man go 8 days without sleep? ", ["No option for this"], "The answer is by sleeping during the night time"),
+IQQuestion("'Rhythm of eyes' city name in India? ", ["Chennai","Nainital","Srinagar","Karnataka"], "The answer is Nainital. Explanation: 'Rhythm of eyes' logically means Nainital in India.The other cities are: No Zip - Chennai, Mr. City - Srinagar, Do Acting - Karnataka"),
 
-6. How can a man go 8 days without sleep?
-Ans- By sleeping during the night time
-
-7.'Rhythm of eyes' city name in India?
-   A. Chennai
-   B.Nainital
-   C. Srinagar
-   D. Karnataka
-  Answer: B) Nainital
-  Explanation: 'Rhythm of eyes' logically means Nainital in India.
-  The other cities are: No Zip - Chennai, Mr. City - Srinagar, Do Acting - Karnataka.
 
 
 
