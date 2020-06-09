@@ -29,10 +29,10 @@ class IQTestScreen extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           child: SingleChildScrollView(
             child: Column(children: <Widget>[
-              Option(option: "Ogun State", selected: ""),
-              Option(option: "Benue State", selected: ""),
-              Option(option: "Delta State", selected: ""),
-              Option(option: "Lagos State", selected: ""),
+              Option(option: "Ogun State"),
+              Option(option: "Benue State"),
+              Option(option: "Delta State"),
+              Option(option: "Lagos State"),
             ],)
           ),
         ),
@@ -51,8 +51,7 @@ Text question(String question, BuildContext ctx) {
 
 class Option extends StatelessWidget {
   final String option;
-  final String selected;
-  Option({this.option, this.selected});
+  Option({this.option});
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -73,9 +72,7 @@ class Option extends StatelessWidget {
                 vertical: 20,
                 horizontal: MediaQuery.of(context).size.width * .3),
             decoration: BoxDecoration(
-                border: selected != option
-                    ? Border.all(color: Colors.white)
-                    : Border.all(color: Colors.green),
+                border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(30)),
             child: Text(
               option,
