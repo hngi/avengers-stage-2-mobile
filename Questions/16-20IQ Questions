@@ -1,0 +1,24 @@
+IQQuestion("Melt : Liquid :: Freeze : ",
+["Ice","Solid","Condense","Push"], 
+"Answer: B. Solid"),
+
+IQQuestion("Choose what number represents the Roman numeral: LXI ",
+["51","98","61","20"], 
+"Answer: C. L is 50, X is 10, I is 1. Hence, 50+10+1=61."),
+
+IQQuestion("What is it that is greater than God?
+more Evil than the Devil, 
+the Rich Wants it and 
+the poor man have it ",
+["No Option"], 
+"Answer: Nothing. 
+Nothing Evil than the Devil, The rich need nothing the poor have nothing."),
+
+IQQuestion("Hom many times can you subtract 10 from 100? ",
+["5 times ","10 times","1 times only","100 times"], 
+"Answer: C - The next times you will be subtracting from 90."),
+
+IQQuestion("Which number should come next in the pattern?
+37, 34, 31, 28",
+["No Option"], 
+"Answer: 25, the numbers are decreasing by 3"),
