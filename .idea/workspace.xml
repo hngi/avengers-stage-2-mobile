@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-hdpi/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-mdpi/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xhdpi/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xxhdpi/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xxxhdpi/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/Pages/NameLog.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +64,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591642710360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1591644656853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591644656853</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1591696129510</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591696129510</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,7 +86,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
