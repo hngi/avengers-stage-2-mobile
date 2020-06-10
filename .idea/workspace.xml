@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brainy/assets/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brainy/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brainy/lib/data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/lib/data.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brainy/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_avengers_mobile/lib/Pages/NameLog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/team_avengers_mobile/lib/Pages/NameLog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brainy/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,17 +26,17 @@
   <component name="ProjectId" id="1d38lLplVY2VTRIhzEx5GK3MBAr" />
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/team_avengers_mobile/android/app/src/main/res/mipmap-xxxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/brainy/assets" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\brainy\assets" />
       <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-xxxhdpi" />
       <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-xxhdpi" />
       <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-xhdpi" />
       <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-mdpi" />
-      <recent name="C:\Users\OLALEYE BOLU\AndroidProjects\avengers-stage-2-mobile\team_avengers_mobile\android\app\src\main\res\mipmap-hdpi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591711294452</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update">
+      <created>1591799276368</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591799276368</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
