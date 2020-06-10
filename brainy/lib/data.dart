@@ -9,17 +9,14 @@ getIQQuestion2(int totalItemsExpected, List<String> list ){
 
 
 
-get iqQuestions{
-size=10;
-index=0;
-IqQuestionBank. Shuffle ( );
-List‹iQQuestion› temp;
-while(index !=size) {
-temp.add(iqQuestionBank[index]);
+get iqQuestions(int totalItemsExpected ){
 
-index ++;
 
-}
+IqQuestionBank.shuffle( );
+List‹IQQuestion› temp;
+temp = iqQuestion.getRange(0, totalItemsExpected-1);
+
+
 return temp; 
 }
 
