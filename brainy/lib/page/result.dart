@@ -79,7 +79,6 @@ class _ResultPageState extends State<ResultPage> {
                       borderRadius: BorderRadius.circular(35),
                       highlightColor: Colors.green,
                       onTap: () {
-                        brainy.reset();
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
                             builder: (BuildContext context) =>
                                 (WelcomeScreen())));

@@ -3,19 +3,26 @@ import '../brainy.dart';
 import '../theme/theme.dart';
 import 'result.dart';
 
-Brainy brainy = Brainy();
+
 
 class QuestionsPage extends StatefulWidget {
+  
   @override
   _QuestionsPageState createState() => _QuestionsPageState();
 }
 
 class _QuestionsPageState extends State<QuestionsPage> {
-
+  Brainy brainy = new Brainy();
   String userResponse = "";
-  int currentQ = brainy.currentQuestion();
+  int currentQ;
+  @override
+  void initState() {
+    currentQ = brainy.currentQuestion();
+    super.initState();
+  }
 
   void checkAnswer(String option) {
+    
     String correctAnswer = brainy.getCorrectAnswer();
 
     setState(() {
@@ -34,6 +41,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                     totalScore: brainy.numberOfQuestions().floorToDouble(),
                     result: "Output Will be displayed here\nThanks",
                   )));
+                  brainy.reset();
         }
         brainy.nextQuestion();
       } else {
