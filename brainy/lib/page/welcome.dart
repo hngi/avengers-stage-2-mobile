@@ -1,4 +1,4 @@
-import 'package:brainy/page/iq.dart';
+import 'package:brainy/page/questions_page.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/theme.dart';
@@ -31,10 +31,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   void registerUser(){
     validateUserInput();
     if(validatorErrorText == null && usernameTextController.text.isNotEmpty){
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx)=>IQTestScreen()));
-      print(".........Register User...........");
-      
-            
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx)=>QuestionsPage()));
+      print(".........Register User...........");      
     }
   }
 
