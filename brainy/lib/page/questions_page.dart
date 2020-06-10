@@ -11,7 +11,7 @@ class QuestionsPage extends StatefulWidget {
 }
 
 class _QuestionsPageState extends State<QuestionsPage> {
-  
+
   String userResponse = "";
   int currentQ = brainy.currentQuestion();
 
@@ -20,35 +20,39 @@ class _QuestionsPageState extends State<QuestionsPage> {
 
     setState(() {
       userResponse = option;
-        
-       if (userResponse == correctAnswer) {
+
+      if (userResponse == correctAnswer) {
         brainy.incrementScore();
         if (brainy.isFinished() == true) {
 //        Navigator.sth to the results page
 //      Throw an alert to the user that evaluation has finished
-  
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (ctx) => ResultPage(
-                  correctScore: brainy.correctResponse,
-                  wrongScore: brainy.wrongResponse,
-                  totalScore: brainy.numberOfQuestions().floorToDouble(),
-                  result: "Output Will be displayed here\nThanks",
-                )));}
+
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (ctx) => ResultPage(
+                    correctScore: brainy.correctResponse,
+                    wrongScore: brainy.wrongResponse,
+                    totalScore: brainy.numberOfQuestions().floorToDouble(),
+                    result: "Output Will be displayed here\nThanks",
+                  )));
+        }
         brainy.nextQuestion();
       } else {
         brainy.decrementScore();
-        brainy.nextQuestion();
+        
+        print("object Wrong Score: ${brainy.wrongResponse}");
         if (brainy.isFinished() == true) {
 //        Navigator.sth to the results page
 //      Throw an alert to the user that evaluation has finished
-  
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (ctx) => ResultPage(
-                  correctScore: brainy.correctResponse,
-                  wrongScore: brainy.wrongResponse,
-                  totalScore: brainy.numberOfQuestions().floorToDouble(),
-                  result: "Output Will be displayed here\nThanks",
-                )));}
+
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (ctx) => ResultPage(
+                    correctScore: brainy.correctResponse,
+                    wrongScore: brainy.wrongResponse,
+                    totalScore: brainy.numberOfQuestions().floorToDouble(),
+                    result: "Output Will be displayed here\nThanks",
+                  )));
+        }
+        brainy.nextQuestion();
       }
     });
   }
@@ -57,67 +61,74 @@ class _QuestionsPageState extends State<QuestionsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: primarylightColor,
-      appBar: customAppbar(context, "${brainy.currentQuestion()+1}", brainy.totalQuestions),
-      body: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              height: MediaQuery.of(context).size.height * .3,
-              width: MediaQuery.of(context).size.width * .8,
-              alignment: Alignment.center,
-              child: question(brainy.getQuestionText(), context),
-            ),
-            Container(
-              height: MediaQuery.of(context).size.height * .55,
-              width: MediaQuery.of(context).size.width,
-              child: SingleChildScrollView(
-                  child: Column(
-                children: <Widget>[
-                  Option(
-                      option: brainy.getOptions()[0],
-                      selected: "",
-                      onTap: () {
-                        setState(() {
-                          checkAnswer(brainy.getOptions()[0]);
-                        });
-                      }),
-                  Option(
-                      option: brainy.getOptions()[1],
-                      selected: "",
-                      onTap: () {
-                        setState(() {
-                          checkAnswer(brainy.getOptions()[1]);
-                        });
-                      }),
-                  Option(
-                      option: brainy.getOptions()[2],
-                      selected: "",
-                      onTap: () {
-                        setState(() {
-                          checkAnswer(brainy.getOptions()[2]);
-                        });
-                      }),
-                  Option(
-                      option: brainy.getOptions()[3],
-                      selected: "",
-                      onTap: () {
-                        setState(() {
-                          checkAnswer(brainy.getOptions()[3]);
-                        });
-                      }),
+      appBar: customAppbar(
+          context, "${brainy.currentQuestion() + 1}", brainy.totalQuestions),
+      body: SingleChildScrollView(
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                height: MediaQuery.of(context).size.height * .3,
+                width: MediaQuery.of(context).size.width * .8,
+                alignment: Alignment.center,
+                child: question(brainy.getQuestionText(), context),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height * .55,
+                width: MediaQuery.of(context).size.width,
+                child: SingleChildScrollView(
+                    child: Column(
+                  children: <Widget>[
+                    Option(
+                        option: brainy.getOptions()[0],
+                        
+                        onTap: () {
+                          setState(() {
+                        
+                            checkAnswer(brainy.getOptions()[0]);
+                          });
+                        }),
+                    Option(
+                        option: brainy.getOptions()[1],
+                        
+                        onTap: () {
+                          setState(() {
+                            
+                            checkAnswer(brainy.getOptions()[1]);
+                          });
+                        }),
+                    Option(
+                        option: brainy.getOptions()[2],
+                        
+                        onTap: () {
+                          setState(() {
+                            
+                            checkAnswer(brainy.getOptions()[2]);
+                          });
+                        }),
+                    Option(
+                        option: brainy.getOptions()[3],
+                        
+                        onTap: () {
+                          setState(() {
+                        
+                            checkAnswer(brainy.getOptions()[3]);
+                          });
+                        }),
 
-                  /*ListView.builder(
-                      itemCount: questionOptions.length,
-                      itemBuilder: (BuildContext ctx, int index) {
-                        return Option(
-                          option: questionOptions[index],
-                        );
-                      })*/
-                ],
-              )),
-            ),
-          ]),
+                    /*ListView.builder(
+                        itemCount: questionOptions.length,
+                        itemBuilder: (BuildContext ctx, int index) {
+                          return Option(
+                            option: questionOptions[index],
+                          );
+                        })*/
+                  ],
+                )),
+              ),
+            ]),
+      ),
     );
   }
 }
@@ -161,40 +172,36 @@ Text question(String question, BuildContext ctx) {
 
 class Option extends StatelessWidget {
   final String option;
-  final String selected;
   final Function onTap;
-  Option({this.option, this.selected, this.onTap});
+  Option({this.option, this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: GestureDetector(
-          onTap: onTap,
-          /*() {
-            print("The answer is: $option");
-            */ /*Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (ctx) => ResultPage(
-                      correctScore: 70.0,
-                      wrongScore: 30.0,
-                      totalScore: 100,
-                      result: "Output Will be displayed here\nThanks",
-                    )))*/ /*
-          }*/
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 10),
-            padding: EdgeInsets.symmetric(
-                vertical: 20,
-                horizontal: MediaQuery.of(context).size.width * .3),
-            decoration: BoxDecoration(
-                border: selected != option
-                    ? Border.all(color: Colors.white)
-                    : Border.all(color: Colors.green),
-                borderRadius: BorderRadius.circular(30)),
+    return Container(
+      width: MediaQuery.of(context).size.width * .9,
+          margin: EdgeInsets.symmetric(vertical: 10),
+          padding: EdgeInsets.all(3),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(35),
+        onTap: onTap,
+        
+        child: Container(
+          width: MediaQuery.of(context).size.width * .9,
+          
+          padding: EdgeInsets.symmetric(
+            vertical: 20,
+          ),
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.white),
+              borderRadius: BorderRadius.circular(30)),
+          child: Center(
             child: Text(
               option,
               style: Theme.of(context).textTheme.bodyText1,
             ),
-          )),
+          ),
+        ),
+      ),
     );
   }
 }

@@ -47,7 +47,7 @@ List<IQQuestion> iqQuestionBank = [
   IQQuestion(
       "Which of the following can be arranged into a 5-letter English word? ",
       ["H R G S T", "R I L S A", "T O O M T", "W Q R G S"],
-      "RILSA"),
+      "R I L S A"),
   IQQuestion(
       "What number best completes the analogy: 8:4 as 10:",
       ["3", "7", "24", "5"],
