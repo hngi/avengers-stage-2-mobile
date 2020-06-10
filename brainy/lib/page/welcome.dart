@@ -1,6 +1,5 @@
-import 'package:brainy/page/iq.dart';
+import 'questions_page.dart';
 import 'package:flutter/material.dart';
-
 import '../theme/theme.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -12,29 +11,27 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   String validatorErrorText;
   double keyboardVisbleHeight = 0.5;
   TextEditingController usernameTextController = TextEditingController();
-  
+
   void validateUserInput() {
     var username = usernameTextController.text.toString().trim();
     final RegExp nameRegExp = RegExp('[a-zA-Z]');
-  setState(() {
-    if (username.isEmpty) {
-      validatorErrorText = "Required";
-    } else if (nameRegExp.matchAsPrefix(username) == null) {
-      validatorErrorText = "Name not valid";
-    } else {
-      validatorErrorText = null;
-    }
-  });
-    
+    setState(() {
+      if (username.isEmpty) {
+        validatorErrorText = "Required";
+      } else if (nameRegExp.matchAsPrefix(username) == null) {
+        validatorErrorText = "Name not valid";
+      } else {
+        validatorErrorText = null;
+      }
+    });
   }
 
-  void registerUser(){
+  void registerUser() {
     validateUserInput();
-    if(validatorErrorText == null && usernameTextController.text.isNotEmpty){
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx)=>IQTestScreen()));
+    if (validatorErrorText == null && usernameTextController.text.isNotEmpty) {
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (ctx) => QuestionsPage()));
       print(".........Register User...........");
-      
-            
     }
   }
 
@@ -45,19 +42,22 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         padding: EdgeInsets.all(20),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(
-          gradient: gradientBg
-        ),
+        decoration: BoxDecoration(gradient: gradientBg),
         child: SingleChildScrollView(
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  height: MediaQuery.of(context).viewInsets.bottom == 0.0? MediaQuery.of(context).size.height *.2 : MediaQuery.of(context).size.height *.03,
+                  height: MediaQuery.of(context).viewInsets.bottom == 0.0
+                      ? MediaQuery.of(context).size.height * .2
+                      : MediaQuery.of(context).size.height * .03,
                 ),
-                Text('Hi', style: Theme.of(context).textTheme.headline1,),
+                Text(
+                  'Hi',
+                  style: Theme.of(context).textTheme.headline1,
+                ),
                 Text('I\'m Brainy\nYour IQ Evaluator\n\n',
-                    style:Theme.of(context).textTheme.headline2),
+                    style: Theme.of(context).textTheme.headline2),
                 Text('What can i call you?',
                     style: Theme.of(context).textTheme.headline3),
                 SizedBox(
@@ -70,27 +70,25 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       controller: usernameTextController,
                       cursorColor: Colors.white,
                       style: TextStyle(color: Colors.white, fontSize: 20),
-                      
                       textInputAction: TextInputAction.go,
-                      onSubmitted: (_){registerUser();},
+                      onSubmitted: (_) {
+                        registerUser();
+                      },
                       onEditingComplete: () {
                         validateUserInput();
                       },
                       decoration: InputDecoration(
-                        focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)
-                        ),
-                        border: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.white)
-                        ),
+                          focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white)),
+                          border: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.white)),
                           errorText: validatorErrorText,
                           focusColor: Colors.white,
                           enabledBorder: UnderlineInputBorder(
                             borderSide: BorderSide(color: Colors.white),
                           ),
                           labelText: "Call me",
-                          labelStyle:
-                              Theme.of(context).textTheme.headline4),
+                          labelStyle: Theme.of(context).textTheme.headline4),
                     ),
                   ),
                 ),
