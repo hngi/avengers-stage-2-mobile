@@ -9,7 +9,7 @@ class NameLog extends StatefulWidget {
 
 class _NameLogState extends State<NameLog> {
   TextEditingController nameController = new TextEditingController();
-
+https://github.com/hngi/avengers-stage-2-mobilegit pull 
   @override
   Widget build(BuildContext context) {
     return Scaffold(

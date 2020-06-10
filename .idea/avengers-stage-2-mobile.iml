@@ -3,6 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/brainy/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/brainy/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/brainy/build" />
       <excludeFolder url="file://$MODULE_DIR$/team_avengers_mobile/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/team_avengers_mobile/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/team_avengers_mobile/build" />
