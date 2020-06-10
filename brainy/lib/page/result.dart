@@ -1,3 +1,5 @@
+
+import 'package:brainy/page/questions_page.dart';
 import 'package:brainy/page/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
@@ -22,8 +24,9 @@ class _ResultPageState extends State<ResultPage> {
   double correctScorePer = 0;
   @override
   void initState() {
-    correctScorePer = (widget.correctScore / widget.totalScore) * 100.0;
-    wrongScorePer = (widget.wrongScore / widget.totalScore) * 100.0;
+    correctScorePer = double.parse(((widget.correctScore / widget.totalScore) * 100.0).toStringAsFixed(2));
+    print("The Score is : $correctScorePer");
+    wrongScorePer = double.parse(((widget.wrongScore / widget.totalScore) * 100.0).toStringAsFixed(2));
     super.initState();
   }
 
@@ -68,10 +71,12 @@ class _ResultPageState extends State<ResultPage> {
                   alignment: Alignment.bottomCenter,
                   child: Center(
                     child: GestureDetector(
-                        onTap: () => Navigator.of(context).pushReplacement(
+                        onTap: () {
+                          brainy.reset();
+                          Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
                                 builder: (BuildContext context) =>
-                                    (WelcomeScreen()))),
+                                    (WelcomeScreen())));},
                         child: Container(
                           padding: EdgeInsets.symmetric(
                               vertical: 20,
