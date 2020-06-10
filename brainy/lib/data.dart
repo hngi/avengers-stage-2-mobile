@@ -3,10 +3,13 @@ import 'models/iq_questions.dart';
 
 
 
+class IQQuestionBank{
+
 
 getIQQuestion2(int totalItemsExpected, List<String> list ){
   List<String> newList = new List();
   newList = (list.toList()..shuffle()).getRange(0, totalItemsExpected-1);
+  
   return newList;
 }
 
@@ -19,7 +22,7 @@ return temp;
 
 
 }
-
+}
 
 
 /*
