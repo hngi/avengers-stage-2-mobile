@@ -7,10 +7,16 @@ class Brainy {
   int _questionNumber = 0;
   String response = "";
   int totalQuestions = 0;
-  List<IQQuestion> _questionBank = iqQuestions(10);
+  IQQuestionBank iqQuestionBank = IQQuestionBank();
+  List<IQQuestion> _questionBank;
   Brainy(){
+    _questionBank = iqQuestionBank.iqQuestions(7);
     totalQuestions = _questionBank.length;
-  }
+    for(int i =0; i<_questionBank.length; i++){
+      _questionBank[i].options.shuffle();
+    }
+  }  
+  
 
   void nextQuestion() {
     if (_questionNumber < _questionBank.length - 1) {
@@ -23,6 +29,7 @@ class Brainy {
   }
 
   List<String> getOptions() {
+    
     return _questionBank[_questionNumber].options;
   }
 

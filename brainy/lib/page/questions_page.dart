@@ -3,19 +3,26 @@ import '../brainy.dart';
 import '../theme/theme.dart';
 import 'result.dart';
 
-Brainy brainy = Brainy();
+
 
 class QuestionsPage extends StatefulWidget {
+  
   @override
   _QuestionsPageState createState() => _QuestionsPageState();
 }
 
 class _QuestionsPageState extends State<QuestionsPage> {
-
+  Brainy brainy = new Brainy();
   String userResponse = "";
-  int currentQ = brainy.currentQuestion();
+  int currentQ;
+  @override
+  void initState() {
+    currentQ = brainy.currentQuestion();
+    super.initState();
+  }
 
   void checkAnswer(String option) {
+    
     String correctAnswer = brainy.getCorrectAnswer();
 
     setState(() {
@@ -34,6 +41,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                     totalScore: brainy.numberOfQuestions().floorToDouble(),
                     result: "Output Will be displayed here\nThanks",
                   )));
+                  brainy.reset();
         }
         brainy.nextQuestion();
       } else {
@@ -156,17 +164,19 @@ AppBar customAppbar(BuildContext context, currentQuestion, int totalQuestions) {
       )),
       Center(
           child: Text(
-        totalQuestions.toString(),
+        "${totalQuestions.toString()}   ",
         style: Theme.of(context).textTheme.bodyText2,
       )),
     ],
   );
 }
 
-Text question(String question, BuildContext ctx) {
-  return Text(
-    question,
-    style: Theme.of(ctx).textTheme.bodyText1,
+SingleChildScrollView question(String question, BuildContext ctx) {
+  return SingleChildScrollView(
+      child: Text(
+      question,
+      style: Theme.of(ctx).textTheme.bodyText1,
+    ),
   );
 }
 
@@ -178,30 +188,31 @@ class Option extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * .9,
-          margin: EdgeInsets.symmetric(vertical: 10),
-          padding: EdgeInsets.all(3),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(35),
-        onTap: onTap,
         
-        child: Container(
-          width: MediaQuery.of(context).size.width * .9,
-          
-          padding: EdgeInsets.symmetric(
-            vertical: 20,
-          ),
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
-              borderRadius: BorderRadius.circular(30)),
-          child: Center(
-            child: Text(
-              option,
-              style: Theme.of(context).textTheme.bodyText1,
-            ),
-          ),
+        width: MediaQuery.of(context).size.width * .9,
+      margin: EdgeInsets.symmetric(vertical: MediaQuery.of(context).size.height*.015),
+      //padding: EdgeInsets.all(3),
+        child: InkWell(
+      borderRadius: BorderRadius.circular(35),
+      onTap: onTap,
+      
+      child: Container(
+        width: MediaQuery.of(context).size.width * .9,
+        
+        padding: EdgeInsets.symmetric(
+        vertical: 20,
+        ),
+        decoration: BoxDecoration(
+    border: Border.all(color: Colors.white),
+    borderRadius: BorderRadius.circular(30)),
+        child: Center(
+        child: Text(
+    option,
+    style: Theme.of(context).textTheme.bodyText1,
+        ),
         ),
       ),
-    );
+    ),
+      );
   }
 }

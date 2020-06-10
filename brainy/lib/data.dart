@@ -1,27 +1,28 @@
 import 'models/iq_questions.dart';
 
 
+
+
+class IQQuestionBank{
+
+
 getIQQuestion2(int totalItemsExpected, List<String> list ){
   List<String> newList = new List();
   newList = (list.toList()..shuffle()).getRange(0, totalItemsExpected-1);
+  
   return newList;
 }
 
+List<IQQuestion> iqQuestions(int totalItemsExpected ){
 
-
-get iqQuestions(int totalItemsExpected ){
-
-
-IqQuestionBank.shuffle( );
-List‹IQQuestion› temp;
-temp = iqQuestionBank.getRange(0, totalItemsExpected-1);
-
-
+  iqQuestionBank.shuffle();
+  List<IQQuestion> temp;
+  temp = iqQuestionBank.getRange(0, totalItemsExpected).toList();
 return temp; 
+
+
 }
-
-
-
+}
 
 
 /*
@@ -29,7 +30,6 @@ Please Key note for the data
 Please do not add explanation to the answer
   Use this format
 Options ["", "", "", ""]
-
 IQQuestion("Question Here",
       [Options],
       "Answer")
