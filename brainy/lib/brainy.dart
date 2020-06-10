@@ -7,7 +7,7 @@ class Brainy {
   int _questionNumber = 0;
   String response = "";
   int totalQuestions = 0;
-  List<IQQuestion> _questionBank = iqQuestionBank;
+  List<IQQuestion> _questionBank = iqQuestions(10);
   Brainy(){
     totalQuestions = _questionBank.length;
   }
