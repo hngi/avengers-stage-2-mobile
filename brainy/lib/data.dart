@@ -14,7 +14,7 @@ get iqQuestions(int totalItemsExpected ){
 
 IqQuestionBank.shuffle( );
 List‹IQQuestion› temp;
-temp = iqQuestion.getRange(0, totalItemsExpected-1);
+temp = iqQuestionBank.getRange(0, totalItemsExpected-1);
 
 
 return temp; 
