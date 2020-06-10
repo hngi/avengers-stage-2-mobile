@@ -1,4 +1,3 @@
-
 import 'package:brainy/page/questions_page.dart';
 import 'package:brainy/page/welcome.dart';
 import 'package:flutter/material.dart';
@@ -24,9 +23,11 @@ class _ResultPageState extends State<ResultPage> {
   double correctScorePer = 0;
   @override
   void initState() {
-    correctScorePer = double.parse(((widget.correctScore / widget.totalScore) * 100.0).toStringAsFixed(2));
-    print("The Score is : $correctScorePer");
-    wrongScorePer = double.parse(((widget.wrongScore / widget.totalScore) * 100.0).toStringAsFixed(2));
+    print("The Wrong Score : ${widget.wrongScore}");
+    correctScorePer = (widget.correctScore / widget.totalScore) * 100.0;
+    print("The Correct Score is : $correctScorePer");
+    wrongScorePer = (widget.wrongScore / widget.totalScore) * 100.0;
+    print("The Wrong Score is : %$wrongScorePer");
     super.initState();
   }
 
@@ -69,28 +70,61 @@ class _ResultPageState extends State<ResultPage> {
                 flex: 1,
                 child: Align(
                   alignment: Alignment.bottomCenter,
-                  child: Center(
-                    child: GestureDetector(
-                        onTap: () {
-                          brainy.reset();
-                          Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    (WelcomeScreen())));},
-                        child: Container(
-                          padding: EdgeInsets.symmetric(
-                              vertical: 20,
-                              horizontal:
-                                  MediaQuery.of(context).size.width * .3),
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white),
-                              borderRadius: BorderRadius.circular(30)),
+                  child: Container(
+                    alignment: Alignment.center,
+                    width: MediaQuery.of(context).size.width * .9,
+                    margin: EdgeInsets.symmetric(vertical: 10),
+                    padding: EdgeInsets.all(3),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(35),
+                      highlightColor: Colors.green,
+                      onTap: () {
+                        brainy.reset();
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                (WelcomeScreen())));
+                      },
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * .9,
+                        padding: EdgeInsets.symmetric(
+                          vertical: 20,
+                        ),
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Center(
                           child: Text(
                             'Done',
                             style: Theme.of(context).textTheme.bodyText1,
                           ),
-                        )),
+                        ),
+                      ),
+                    ),
                   ),
+                  // child: Container(
+                  //   child: InkWell(
+                  //       onTap: () {
+                  //         brainy.reset();
+                  //         Navigator.of(context).pushReplacement(
+                  //             MaterialPageRoute(
+                  //                 builder: (BuildContext context) =>
+                  //                     (WelcomeScreen())));
+                  //       },
+                  //       child: Container(
+                  //         padding: EdgeInsets.symmetric(
+                  //             vertical: 20,
+                  //             horizontal:
+                  //                 MediaQuery.of(context).size.width * .3),
+                  //         decoration: BoxDecoration(
+
+                  //             border: Border.all(color: Colors.white),
+                  //             borderRadius: BorderRadius.circular(30)),
+                  //         child: Text(
+                  //           'Done',
+                  //           style: Theme.of(context).textTheme.bodyText1,
+                  //         ),
+                  //       )),
+                  // ),
                 ),
               ),
             ]),
@@ -140,12 +174,8 @@ class ResultChart extends StatelessWidget {
       ],
       chartType: CircularChartType.Radial,
       percentageValues: true,
-      holeLabel: '${correctScore.toInt()}/${totalScore.toInt()}',
-      labelStyle: new TextStyle(
-        color: Colors.white,
-        fontWeight: FontWeight.bold,
-        fontSize: 24.0,
-      ),
+      holeLabel: 'IQ',//'${correctScore.toInt()}/${totalScore.toInt()}',
+      labelStyle: Theme.of(context).textTheme.headline1,
     );
   }
 }
