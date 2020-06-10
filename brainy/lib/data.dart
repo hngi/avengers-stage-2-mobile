@@ -1,17 +1,6 @@
 import 'models/iq_questions.dart';
 
 
-
-getIQQuestions(int totalItemsExpected, List<String> list ){
-
-  List<String> newList = new List();
-  for(int i = 0; i<totalItemsExpected; i++){
-    var randomItem = (list.toList()..shuffle()).first;
-    newList.add(randomItem);
-  }
-  return newList;
-}
-
 getIQQuestion2(int totalItemsExpected, List<String> list ){
   List<String> newList = new List();
   newList = (list.toList()..shuffle()).getRange(0, totalItemsExpected-1);
@@ -20,11 +9,16 @@ getIQQuestion2(int totalItemsExpected, List<String> list ){
 
 
 
+get iqQuestions(int totalItemsExpected ){
 
 
+IqQuestionBank.shuffle( );
+List‹IQQuestion› temp;
+temp = iqQuestion.getRange(0, totalItemsExpected-1);
 
 
-
+return temp; 
+}
 
 
 
