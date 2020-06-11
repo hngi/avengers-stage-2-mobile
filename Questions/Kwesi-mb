@@ -64,27 +64,6 @@ d.5
 
 The answer is 5 because 4 is half of 8, and 5 is half of 10.
 
-6.At a conference, 12 members shook hands with each other before & after the meeting. How many total number of hand shakes occurred?
-100
-132
-145
-144
-121
-Correct answer: 132
-Explanation: The first person shook hands with 11 remaining people, the second person also shook hands with 11 people, but we count 10, as the hand shake with the first person has already been counted. Then add 9 for the third person, 8 for the fourth one & proceeding in this fashion we get: 11 + 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 66.
-Hence 66 hand shakes took place before & 66 after the meeting, for a total of 132.
-
- 
-
-7.The day after the day after tomorrow is four days before Monday. What day is it today?
-A. Monday
-B. Tuesday
-C. Wednesday
-D. Thursday
-E. Friday
-Correct answer: A. Monday
-Explanation:Four days before Monday is Thursday, simply because four days after Thursday is Monday. Besides, day after the day after tomorrow is Thursday only if present day is Monday.
-
  
 
 8.A fisherman has 5 fishes (namely A, B, C,D, E) each having a different weight.
