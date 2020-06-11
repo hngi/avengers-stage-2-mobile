@@ -1,5 +1,5 @@
-import 'models/iq_questions.dart';
-import 'models/question.dart';
+import '../models/iq_questions.dart';
+import '../models/question.dart';
 
 class IQQuestionBank {
   getIQQuestion2(int totalItemsExpected, List<String> list) {
@@ -86,7 +86,70 @@ List<IQQuestion> iqQuestionBank = [
       ["Lock", "Guard", "Sure", "Conserve"], "Guard"),
   IQQuestion("'Rhythm of eyes' city name in India? ",
       ["Chennai", "Nainital", "Srinagar", "Karnataka"], "Nainital"),
-
+  IQQuestion(
+    "Select the one which is different from the other three responses",
+    ["1", "65", "8", "64"],
+    "65",
+  ),
+  IQQuestion("Which word is the odd man out?",
+      ["trivial", "unimportant", "important", "insignificant"], "important"),
+  IQQuestion("Which word does NOT belong with the others?",
+      ["wing", "fin", "beak", "rudder"], "beak"),
+  IQQuestion("Select the odd word from the given alternatives",
+      ["Herb", "Flower", "Tree", "Shrub"], "Flower"),
+  IQQuestion("What is the result of 2+2*2-2/2 ?", ['2', '3', '4', '5'], "5"),
+  IQQuestion(
+      "When Ashley was 15, her mother was 37. Now, her mother is twice her age. How old is Ashley?",
+      ["30", "45", "37", "22"],
+      "22"),
+  IQQuestion(
+      "A clerk at the butcher shop is six feet tall and wears size 10 shoes. What does he weigh?",
+      ['shoes', 'meat', 'fish', 'food'],
+      'meat'),
+  IQQuestion(
+      "A farmer has 19 sheep on his land. One day, a big storm hits and all but seven run away. How many sheep does the farmer have left?",
+      ["0", '19', "7", 'None'],
+      "7"),
+  IQQuestion(
+      "Word association: find a word that associates with the following sets of words. Glasses, screen, day",
+      ['Night', 'Day', 'Summer', 'Hot'],
+      'Day'),
+  IQQuestion("Divide 30 by ½ and add 10. What’s the answer?",
+      ['60', '50', '70', '80'], '70'),
+  IQQuestion(
+      "At a conference, 12 members shook hands with each other before & after the meeting. How many total number of hand shakes occurred? ",
+      ["100", "132", "145", "144"],
+      "132"),
+  IQQuestion(
+      "The day after the day after tomorrow is four days before Monday. What day is it todayT",
+      ["Monday", " Tuesday", "Wednesday", "Thursday"],
+      "Monday"),
+  IQQuestion(
+      "All strawberries are cheap. No red coloured things are cheap.",
+      [
+        "All stawberries are cheap",
+        "Red coloured strawberries are not cheap",
+        "All of the above",
+        "None of the above"
+      ],
+      "Red coloured strawberries are not cheap"),
+  IQQuestion(
+    "Amara runs faster than Titi. Simi runs faster than Amara. Titi runs faster than Simi. If the first two statements are true, the third statement is ?",
+    ["True", "False", "Uncertain", "Unreal"],
+    "False",
+  ),
+  IQQuestion(
+      "Mr.Kanu’s mother’s father-in-law’s only son’s only daughter’s son is Chike. How is Kanu related to Chike?",
+      ["Uncle", "Nephew", "Father", "Cannot be determined"],
+      "Uncle"),
+  IQQuestion(
+      "Parts : Strap :: Wolf :", ["Flow", "Animal", "Wood", "Fox"], "Flow"),
+  IQQuestion("5:36:6: ", ["25", "38", "49", "52"], "49"),
+  IQQuestion("7:10:8:11:9:12: ", ["7", "12", "10", "13"], "10"),
+  IQQuestion(
+      "A woman said, “His brother’s father is the only son of my grandfather.” How is the woman related to this man?",
+      ["Mother", "Aunt", "Sister", "Grandmother"],
+      "Sister"),
 /*
   IQQuestion(
       "What is it that is greater than God, more Evil than the Devil, the Rich Wants it and the poor man have it ",
