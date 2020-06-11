@@ -32,19 +32,19 @@ class _ResultPageState extends State<ResultPage> {
     
     wrongScorePer = (widget.wrongScore / widget.totalScore) * 100.0;
     
-    if (correctScorePer <= 69) {
+    if (widget.correctScore <= 69) {
       resultStatement = "I see no future in you.";
-    } else if (correctScorePer > 69.0 && correctScorePer <= 79.0) {
+    } else if (widget.correctScore > 69.0 && widget.correctScore <= 79.0) {
       resultStatement = "You definitely need to up your game, try again";
-    } else if (correctScorePer > 79.0 && correctScorePer <= 89.0) {
+    } else if (widget.correctScore > 79.0 && widget.correctScore <= 89.0) {
       resultStatement = "Keep playing and you'd surely improve!";
-    } else if (correctScorePer > 89.0 && correctScorePer <= 109.0) {
+    } else if (widget.correctScore > 89.0 && widget.correctScore <= 109.0) {
       resultStatement = "You are as smart as the next person.";
-    } else if (correctScorePer > 109.0 && correctScorePer <= 119.0) {
+    } else if (widget.correctScore > 109.0 && widget.correctScore <= 119.0) {
       resultStatement = "You have an IQ above average.";
-    } else if (correctScorePer > 119.0 && correctScorePer <= 129.0) {
+    } else if (widget.correctScore > 119.0 && widget.correctScore <= 129.0) {
       resultStatement = "You are incredibly smart";
-    } else if (correctScorePer > 130) {
+    } else if (widget.correctScore > 130) {
       resultStatement = "You are a genius!";
     }
     super.initState();
