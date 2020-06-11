@@ -1,3 +1,4 @@
+import 'package:brainy/page/ui/iq_question_end.dart';
 import 'package:flutter/material.dart';
 import '../brainy.dart';
 import '../theme/theme.dart';
@@ -39,34 +40,31 @@ class _QuestionsPageState extends State<QuestionsPage> {
         if (brainy.isFinished() == true) {
 //        Navigator.sth to the results page
 //      Throw an alert to the user that evaluation has finished
-
-          Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (ctx) => ResultPage(
+                  IQEnds(
                     correctScore: brainy.correctResponse,
                     wrongScore: brainy.wrongResponse,
-                    totalScore: brainy.numberOfQuestions().floorToDouble(),
+                    totalScore: brainy.totalScore,
                     username: brainy.player,
-                  )));
+                  ).showEndMsg(context);
+          
                   brainy.reset();
         }
         brainy.nextQuestion();
       } else {
         brainy.decrementScore();
         
-        
         if (brainy.isFinished() == true) {
 //        Navigator.sth to the results page
 //      Throw an alert to the user that evaluation has finished
-      
-          Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (ctx) => ResultPage(
+          IQEnds(
                     correctScore: brainy.correctResponse,
                     wrongScore: brainy.wrongResponse,
                     totalScore: brainy.totalScore,
                     username: brainy.player,
-                  )));
+                  ).showEndMsg(context);
+
+                  brainy.reset();
         }
-        
         brainy.nextQuestion();
       }
     });
