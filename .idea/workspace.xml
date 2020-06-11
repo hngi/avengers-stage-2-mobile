@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="" />
+=======
     <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" afterDir="false" />
     </list>
+>>>>>>> 2617e0b37132874e1b3dad4af54b89bf13897626
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591799276368</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated app name and app icon">
+      <created>1591872730745</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591872730745</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Updated app name and app icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated app name and app icon" />
   </component>
 </project>
