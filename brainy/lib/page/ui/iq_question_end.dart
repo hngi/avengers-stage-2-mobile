@@ -23,13 +23,15 @@ showDialog<void>(
         actions: <Widget>[
           FlatButton(
             child: Text('Proceed', style: Theme.of(context).textTheme.bodyText2,),
-            onPressed: ()=>Navigator.of(context).pushReplacement(MaterialPageRoute(
+            onPressed: (){
+              Navigator.of(context).pop();
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
               builder: (ctx) => ResultPage(
                     correctScore: correctScore,
                     wrongScore: wrongScore,
                     totalScore: totalScore,
                     username: username,
-                  ))),
+                  )));},
           ),
         ],
       );
