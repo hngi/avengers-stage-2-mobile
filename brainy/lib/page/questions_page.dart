@@ -6,17 +6,23 @@ import 'result.dart';
 
 
 class QuestionsPage extends StatefulWidget {
+  final String username;
+  QuestionsPage({this.username});
   
   @override
+  
   _QuestionsPageState createState() => _QuestionsPageState();
 }
 
 class _QuestionsPageState extends State<QuestionsPage> {
-  Brainy brainy = new Brainy();
+
+  Brainy brainy;
   String userResponse = "";
   int currentQ;
   @override
   void initState() {
+    
+    brainy = Brainy(username: widget.username);  
     currentQ = brainy.currentQuestion();
     super.initState();
   }
@@ -39,7 +45,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                     correctScore: brainy.correctResponse,
                     wrongScore: brainy.wrongResponse,
                     totalScore: brainy.numberOfQuestions().floorToDouble(),
-                    result: "Output Will be displayed here\nThanks",
+                    username: brainy.player,
                   )));
                   brainy.reset();
         }
@@ -47,19 +53,20 @@ class _QuestionsPageState extends State<QuestionsPage> {
       } else {
         brainy.decrementScore();
         
-        print("object Wrong Score: ${brainy.wrongResponse}");
+        
         if (brainy.isFinished() == true) {
 //        Navigator.sth to the results page
 //      Throw an alert to the user that evaluation has finished
-
+      
           Navigator.of(context).pushReplacement(MaterialPageRoute(
               builder: (ctx) => ResultPage(
                     correctScore: brainy.correctResponse,
                     wrongScore: brainy.wrongResponse,
-                    totalScore: brainy.numberOfQuestions().floorToDouble(),
-                    result: "Output Will be displayed here\nThanks",
+                    totalScore: brainy.totalScore,
+                    username: brainy.player,
                   )));
         }
+        
         brainy.nextQuestion();
       }
     });
@@ -125,13 +132,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                           });
                         }),
 
-                    /*ListView.builder(
-                        itemCount: questionOptions.length,
-                        itemBuilder: (BuildContext ctx, int index) {
-                          return Option(
-                            option: questionOptions[index],
-                          );
-                        })*/
+                    
                   ],
                 )),
               ),
