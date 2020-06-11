@@ -10,9 +10,23 @@ final gradientBg = LinearGradient(
     end: Alignment.bottomRight,
     tileMode: TileMode.clamp);
 final themeLight = ThemeData(
-    
+    colorScheme: ColorScheme(
+        primary: primarylightColor,
+        primaryVariant: primaryColor,
+        secondary: secondaryColor,
+        secondaryVariant: secondarySwatchColor,
+        surface: Colors.white,
+        background: Colors.white,
+        error: Colors.red,
+        onPrimary: Colors.white,
+        onSecondary: Colors.white,
+        onSurface: primarylightColor,
+        onBackground: primarylightColor,
+        onError: Colors.white,
+        brightness: Brightness.light),
     fontFamily: "Loto",
     primaryColor: primaryColor,
+    accentColor: primarylightColor,
     textTheme: TextTheme(
       headline1: TextStyle(
           fontSize: 40,

@@ -1,4 +1,6 @@
-import 'package:brainy/page/questions_page.dart';
+import 'dart:ui';
+
+import 'package:brainy/page/about_app.dart';
 import 'package:brainy/page/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
@@ -9,10 +11,10 @@ class ResultPage extends StatefulWidget {
   final double correctScore;
   final double wrongScore;
   final double totalScore;
-  final String result;
+  final String username;
 
   ResultPage(
-      {this.correctScore, this.wrongScore, this.totalScore, this.result});
+      {this.username, this.correctScore, this.wrongScore, this.totalScore});
 
   @override
   _ResultPageState createState() => _ResultPageState();
@@ -22,14 +24,16 @@ class _ResultPageState extends State<ResultPage> {
   double wrongScorePer = 0;
   double correctScorePer = 0;
   String resultStatement = "";
+  
   @override
   void initState() {
-    print("The Wrong Score : ${widget.wrongScore}");
+    
     correctScorePer = (widget.correctScore / widget.totalScore) * 100.0;
-    print("The Correct Score is : $correctScorePer");
+    
     wrongScorePer = (widget.wrongScore / widget.totalScore) * 100.0;
-    print("The Wrong Score is : %$wrongScorePer");
+    
     if (correctScorePer <= 69) {
+      resultStatement = "I see no future in you.";
     } else if (correctScorePer > 69.0 && correctScorePer <= 79.0) {
       resultStatement = "You definitely need to up your game, try again";
     } else if (correctScorePer > 79.0 && correctScorePer <= 89.0) {
@@ -48,27 +52,52 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    final mediaQuery = MediaQuery.of(context);
+    PreferredSize appBar = PreferredSize(
+      preferredSize: Size(mediaQuery.size.width, mediaQuery.size.height*.1),
+      child:AppBar(
         title: Text("IQ Result", style: Theme.of(context).textTheme.headline3),
         centerTitle: true,
-        backgroundColor: Color(0xFF040c4f),
-      ),
+        backgroundColor: Theme.of(context).accentColor,
+        actions: <Widget>[
+          IconButton(
+            iconSize: 25,
+            onPressed: ()=>showAboutPage(context),
+            icon: Icon(Icons.info),
+            ),
+          
+        ],
+
+      )
+    );
+    return Scaffold(
+      appBar: appBar,
       body: SingleChildScrollView(
         child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
+          width: mediaQuery.size.width,
+          height: mediaQuery.size.height-appBar.preferredSize.height-mediaQuery.padding.top,
           decoration: BoxDecoration(gradient: gradientBg),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
+                SizedBox(height: mediaQuery.size.height*.03,),
                 Expanded(
-                  flex: 2,
-                  child: Center(
-                      child: Text(
-                    widget.result,
-                    style: Theme.of(context).textTheme.headline3,
-                  )),
+                  flex: 1,
+                  child: Container(
+                    width: mediaQuery.size.width*.8,
+                    child: Column(
+                      children: <Widget>[
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Text("Dear ${widget.username},", style: Theme.of(context).textTheme.bodyText1,)),
+                        Center(
+                            child: Text(
+                          resultStatement,
+                          style: Theme.of(context).textTheme.headline3,
+                        )),
+                      ],
+                    ),
+                  ),
                 ),
                 Expanded(
                   flex: 3,
@@ -86,9 +115,10 @@ class _ResultPageState extends State<ResultPage> {
                     alignment: Alignment.bottomCenter,
                     child: Container(
                       alignment: Alignment.center,
-                      width: MediaQuery.of(context).size.width * .9,
+                      height: mediaQuery.size.height*.1,
+                      width: mediaQuery.size.width * .9,
                       margin: EdgeInsets.symmetric(vertical: 10),
-                      padding: EdgeInsets.all(3),
+                      
                       child: InkWell(
                         borderRadius: BorderRadius.circular(35),
                         highlightColor: Colors.green,
@@ -144,30 +174,45 @@ class ResultChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new AnimatedCircularChart(
-      key: _chartKey,
-      size: _chartSize,
-      initialChartData: <CircularStackEntry>[
-        new CircularStackEntry(
-          <CircularSegmentEntry>[
-            new CircularSegmentEntry(
-              correctScorePer,
-              Colors.green,
-              rankKey: 'Correct Score',
+    return Stack(
+      alignment: Alignment.center,
+      children: <Widget>[
+        
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children:<Widget>[
+          Image(
+            image: ExactAssetImage("assets/brain.png"),
+            width: 150,
+            height: 150,
             ),
-            new CircularSegmentEntry(
-              wrongScorePer,
-              Colors.red,
-              rankKey: 'Wrong Score',
+            Text("% ${correctScorePer.toString()}", style: Theme.of(context).textTheme.headline2,)
+        ]),
+        new AnimatedCircularChart(
+          key: _chartKey,
+          size: _chartSize,
+          initialChartData: <CircularStackEntry>[
+            new CircularStackEntry(
+              <CircularSegmentEntry>[
+                new CircularSegmentEntry(
+                  correctScorePer,
+                  Colors.green,
+                  rankKey: 'Correct Score',
+                ),
+                new CircularSegmentEntry(
+                  wrongScorePer,
+                  Colors.red,
+                  rankKey: 'Wrong Score',
+                ),
+              ],
+              rankKey: 'Ranking',
             ),
           ],
-          rankKey: 'Ranking',
+          chartType: CircularChartType.Radial,
+          percentageValues: true,
         ),
       ],
-      chartType: CircularChartType.Radial,
-      percentageValues: true,
-      holeLabel: 'IQ', //'${correctScore.toInt()}/${totalScore.toInt()}',
-      labelStyle: Theme.of(context).textTheme.headline1,
     );
   }
 }

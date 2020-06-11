@@ -1,3 +1,4 @@
+import 'package:brainy/page/about_app.dart';
 import 'package:brainy/page/questions_page.dart';
 import 'package:flutter/material.dart';
 
@@ -30,14 +31,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   void registerUser() {
     validateUserInput();
     if (validatorErrorText == null && usernameTextController.text.isNotEmpty) {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (ctx) => QuestionsPage()));
-      print(".........Register User...........");
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+          builder: (ctx) =>
+              QuestionsPage(username: usernameTextController.text)));
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    
     return GestureDetector(
       onTap: () {
         FocusScopeNode currentFocus = FocusScope.of(context);
@@ -45,8 +47,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           currentFocus.unfocus();
         }
       },
-      child: Material(
-        child: Container(
+      child: Scaffold(
+        body: Container(
           padding: EdgeInsets.all(20),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
@@ -57,7 +59,20 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 children: <Widget>[
                   SizedBox(
                     height: MediaQuery.of(context).viewInsets.bottom == 0.0
-                        ? MediaQuery.of(context).size.height * .2
+                        ? MediaQuery.of(context).size.height * .05
+                        : 0,
+                  ),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: IconButton(
+                      iconSize: 30,
+                      onPressed: () => showAboutPage(context),
+                      icon: Icon(Icons.info, color: Theme.of(context).colorScheme.secondary,),
+                    ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).viewInsets.bottom == 0.0
+                        ? MediaQuery.of(context).size.height * .1
                         : MediaQuery.of(context).size.height * .03,
                   ),
                   Text(
