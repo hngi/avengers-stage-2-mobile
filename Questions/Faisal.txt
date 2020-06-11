@@ -1,0 +1,7 @@
+Question suggestions for Brainy,by Faisal Pindar.
+
+IQQuestion("Which number should come next in the pattern: 37, 34, 31, 28 ? ",["20", "25", "24", "27"], "25","The numbers are decreasing by 3."),
+IQQuestion("Book is to reading as fork is to: ",["Drawing", "Writing", "Stirring", "Eating"], "Eating","Forks are used to eat."),
+IQQuestion("What number best completes the analogy: 8 is to 4, as 10 is to? ",["3", "7", "24", "5"], "5","Half of 8 is 4, hence, half of 10 is 5 also."),
+IQQuestion("The day after the day after tomorrow is four days before Monday. What day is it today? ",["Tuesday", "Monday", "Thursday", "Saturday"], "Monday","4 days before Monday is Thursday, but 3 days before that is Monday!"),
+IQQuestion("Forest is to tree as tree is to ? ",["Branches", "Leafs", "Mangrove", "Plant"], "Leafs","All trees house leafs. Branches is a close answer, but not all trees have branches."),
