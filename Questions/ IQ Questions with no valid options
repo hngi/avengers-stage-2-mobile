@@ -1,0 +1,14 @@
+
+IQQuestion("How can a man go 8 days without sleep? ", [], "Answer: He can", by sleeping during the night time"),
+IQQuestion("A person lived 3 days in the hospital and was absolutely fine. However he had to be carried out. How is that possible?", [], "Answer; Newborn " The baby stayed in the hospital 4days and was carried home"),
+IQQuestion("How can you lift an Elephant with one hand?", [], "Answer: It is not a problem", "You will never find an Elephant with one hand."),
+IQQuestion("One man was 25 years old in 2000 and 20 years old in 2005. How is that possible?", [], "Answer: BC", "The man lived BC"),
+IQQuestion("How do you convert your three matchsticks into number 6?", [], "Answer: Roman numeric " By making a roman numeral VI. you turn 3 matchsticks into 6"),
+IQQuestion("How can a man go 8 days without sleep? ", [], "Answer: Sleeping at Night", A man who always sleeps at night will go through days with sleeping"),
+IQQuestion("I don't have eyes, nose, ears and tongue but i can see, hear and taste everything. What am I? []", "Ans: Brain", " The Brain records everything in an around"),
+IQQuestion("Why are 1968 pennies worth more than 1967 pennies?", [], "Ans: More pennies", "Because there are more penny in 1968 pennies than in 1967.",
+IQQuestion("There are eight men sitting on a couch. Three legs break and six men leave. How many legs are remaining?", [], "Ans: Five", "The legs of the two remaining men (4) and the remaining couch leg."), 
+IQQuestion("What is the maximum number of times a single page of a newspaper can be folded in half by hand?", [], "Ans: Only once", "because after that you will be folding it into quarters, eighths, etc."), 
+
+
+
