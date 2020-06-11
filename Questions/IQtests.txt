@@ -1,19 +1,15 @@
+
 Jonah stole NGN500 from Musa's shop. 30minutes later 
 he went back to Musa's shop with the same NGN500 and 
 bought snacks NGN150, soft drinks NGN120.
-Musa gave him a balance of NGN230. How much did Musa lost in total?
-NGN770
-NGN730
-NGN1000
-NGN500
+Musa gave him a balance of NGN230. 
+
+("How much did Musa lost in total?", ["NGN770","NGN500","NGN730","NGN1000"], "NGN500", Musa lost a total of N500")
 
 Akpos after eating gave NGN1000 to Mama-edo Bukka and requested for his balance. 
 Mama-edo bukka did not have NGN700 balance to give Akpos so she collected from her neighbor Madam k.
 5minutes after Akpos have left with the balance of NGN700. Madam k returned the NGN1000 to Mama-edo bukka 
 because the NGN1000 is counterfeit. Mama-edo bukka after confirming that the money is bad, 
 gave Madam k another NGN1000 from her pulse and destroyed the NGN1000 from Akpos.
-The question is, how much did Mama-edo bukka lost in total?
-NGN2700
-NGN1700
-NGN1000
-NGN2000
+
+("How much did Mama-edo bukka lost in total?", ["NGN2700", "NGN1700","NGN1000","NGN2000"], "NGN1000", "What Mama-edo bukka lost is NGN1000. Think of it this way, assuming that Akpos didn't come with money(counterfiet is not considered as a valid money), Mama-edo bukka borrowed NGN700 from Madam k to give Akpos. NGN700 + NGN300 (cost for the food) = NGN1000,")
