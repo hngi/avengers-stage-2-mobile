@@ -1,29 +1,21 @@
 import 'models/iq_questions.dart';
+import 'models/question.dart';
 
+class IQQuestionBank {
+  getIQQuestion2(int totalItemsExpected, List<String> list) {
+    List<String> newList = new List();
+    newList = (list.toList()..shuffle()).getRange(0, totalItemsExpected - 1);
 
+    return newList;
+  }
 
-
-class IQQuestionBank{
-
-
-getIQQuestion2(int totalItemsExpected, List<String> list ){
-  List<String> newList = new List();
-  newList = (list.toList()..shuffle()).getRange(0, totalItemsExpected-1);
-  
-  return newList;
+  List<IQQuestion> iqQuestions(int totalItemsExpected) {
+    iqQuestionBank.shuffle();
+    List<IQQuestion> temp;
+    temp = iqQuestionBank.getRange(0, totalItemsExpected).toList();
+    return temp;
+  }
 }
-
-List<IQQuestion> iqQuestions(int totalItemsExpected ){
-
-  iqQuestionBank.shuffle();
-  List<IQQuestion> temp;
-  temp = iqQuestionBank.getRange(0, totalItemsExpected).toList();
-return temp; 
-
-
-}
-}
-
 
 /*
 Please Key note for the data
@@ -33,16 +25,10 @@ Options ["", "", "", ""]
 IQQuestion("Question Here",
       [Options],
       "Answer")
-      
+
 */
 
-
-
-
-
-
-/*
-List<LifeQuestion> _logicQuestionBank = [
+List<LifeQuestion> _lifeQuestionBank = [
   LifeQuestion("Who do I spend time with?",
       ["Mentor", "Friends", "Family", "Neighbours"]),
   LifeQuestion("What are they doing to me?",
@@ -56,8 +42,7 @@ List<LifeQuestion> _logicQuestionBank = [
     "towards my dreams / A promising Future",
     "towards their dreams"
   ])
-];*/
-
+];
 List<IQQuestion> iqQuestionBank = [
   /*
   IQQuestion("I don't have eyes, nose, ears and tongue but I can see, hear and taste everything, what am I?", [""], "Brain"),
@@ -71,10 +56,8 @@ List<IQQuestion> iqQuestionBank = [
       "Which of the following can be arranged into a 5-letter English word? ",
       ["H R G S T", "R I L S A", "T O O M T", "W Q R G S"],
       "R I L S A"),
-  IQQuestion(
-      "What number best completes the analogy: 8:4 as 10:",
-      ["3", "7", "24", "5"],
-      "5"),
+  IQQuestion("What number best completes the analogy: 8:4 as 10:",
+      ["3", "7", "24", "5"], "5"),
   IQQuestion(
       "One rabbit saw 6 elephants while going towards River. Every elephant saw 2 monkeys going towards the river. Every monkey holds one tortoise in their hands. How many animals are going towards the river?",
       ["14", "11", "8", "5"],
@@ -86,10 +69,23 @@ List<IQQuestion> iqQuestionBank = [
   IQQuestion("Melt : Liquid :: Freeze : ", ["Ice", "Solid", "Condense", "Push"],
       "Solid"),
 
+  IQQuestion("Choose what number represents the Roman numeral: LXI ",
+      ["51", "98", "61", "20"], "61"),
+  IQQuestion("Hom many times can you subtract 10 from 100? ",
+      ["5 times ", "10 times", "1 times only", "100 times"], "1 times only"),
+  IQQuestion("Which word does NOT belong with the others? ",
+      ["index", "glossary", "chapter", "book"], "book"),
+  IQQuestion("Pick the odd man out? ", ["just", "fair", "equitable", "biased"],
+      "biased"),
   IQQuestion(
-      "Choose what number represents the Roman numeral: LXI ",
-      ["51", "98", "61", "20"],
-      "61"),
+      "CUP : LIP :: BIRD : ?", ["GRASS", "FOREST", "BEAK", "BUSH"], "BEAK"),
+
+  IQQuestion(
+      "Paw : Cat :: Hoof : ?", ["Lamb", "Horse", "Elephant", "Tiger"], "Horse"),
+  IQQuestion("Safe : Secure :: Protect :",
+      ["Lock", "Guard", "Sure", "Conserve"], "Guard"),
+  IQQuestion("'Rhythm of eyes' city name in India? ",
+      ["Chennai", "Nainital", "Srinagar", "Karnataka"], "Nainital"),
 
 /*
   IQQuestion(
