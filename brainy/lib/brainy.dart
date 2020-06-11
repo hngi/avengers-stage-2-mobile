@@ -7,10 +7,13 @@ class Brainy {
   int _questionNumber = 0;
   String response = "";
   int totalQuestions = 0;
+  double _totalScore = 150.0;
+  final String username;
+  
   IQQuestionBank iqQuestionBank = IQQuestionBank();
   List<IQQuestion> _questionBank;
-  Brainy(){
-    _questionBank = iqQuestionBank.iqQuestions(7);
+  Brainy({this.username}){
+    _questionBank = iqQuestionBank.iqQuestions(10);
     totalQuestions = _questionBank.length;
     for(int i =0; i<_questionBank.length; i++){
       _questionBank[i].options.shuffle();
@@ -39,7 +42,6 @@ class Brainy {
 
   bool isFinished() {
     if (_questionNumber >= _questionBank.length - 1) {
-      print('Now returning true');
       return true;
     } else {
       return false;
@@ -53,7 +55,6 @@ class Brainy {
   }
 
   int numberOfQuestions() {
-    print(_questionBank.length);
     return totalQuestions = _questionBank.length;
   }
 
@@ -62,10 +63,10 @@ class Brainy {
   }
 
   void incrementScore(){
-    _correctResponse++;
+    _correctResponse+=15;
   }
    void decrementScore(){
-    _wrongResponse++;
+    _wrongResponse+=15;
   }
   get correctResponse{
     return _correctResponse;
@@ -73,4 +74,11 @@ class Brainy {
   get wrongResponse{
     return _wrongResponse;
   }
+  get totalScore{
+    return _totalScore;
+  }
+  get player{
+    return username;
+  }
 }
+
