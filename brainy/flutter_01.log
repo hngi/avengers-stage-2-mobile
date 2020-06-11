@@ -1,0 +1,73 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+FormatException: FormatException: No ':' on line (at offset 12)
+
+```
+#0      parse (package:package_config/packages_file.dart:64:7)
+#1      _parse (package:flutter_tools/src/dart/package_map.dart:17:10)
+#2      PackageMap.load (package:flutter_tools/src/dart/package_map.dart:49:14)
+#3      PackageMap.map (package:flutter_tools/src/dart/package_map.dart:53:5)
+#4      new PackageUriMapper (package:flutter_tools/src/compile.dart:199:116)
+#5      DefaultResidentCompiler._recompile (package:flutter_tools/src/compile.dart:647:26)
+#6      _RecompileRequest._run (package:flutter_tools/src/compile.dart:408:16)
+#7      _CompilationRequest.run (package:flutter_tools/src/compile.dart:388:30)
+#8      DefaultResidentCompiler._handleCompilationRequest (package:flutter_tools/src/compile.dart:693:23)
+#9      _rootRunUnary (dart:async/zone.dart:1192:38)
+#10     _CustomZone.runUnary (dart:async/zone.dart:1085:19)
+#11     _CustomZone.runUnaryGuarded (dart:async/zone.dart:987:7)
+#12     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#13     _DelayedData.perform (dart:async/stream_impl.dart:594:14)
+#14     _StreamImplEvents.handleNext (dart:async/stream_impl.dart:710:11)
+#15     _PendingEvents.schedule.<anonymous closure> (dart:async/stream_impl.dart:670:7)
+#16     _rootRun (dart:async/zone.dart:1180:38)
+#17     _CustomZone.run (dart:async/zone.dart:1077:19)
+#18     _CustomZone.runGuarded (dart:async/zone.dart:979:7)
+#19     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1019:23)
+#20     _rootRun (dart:async/zone.dart:1184:13)
+#21     _CustomZone.run (dart:async/zone.dart:1077:19)
+#22     _CustomZone.runGuarded (dart:async/zone.dart:979:7)
+#23     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1019:23)
+#24     _microtaskLoop (dart:async/schedule_microtask.dart:43:21)
+#25     _startMicrotaskLoop (dart:async/schedule_microtask.dart:52:5)
+#26     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#27     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.17.3, on Microsoft Windows [Version 6.3.9600], locale en-US)
+    • Flutter version 1.17.3 at C:\Users\OLALEYE BOLU\flutter
+    • Framework revision b041144f83 (7 days ago), 2020-06-04 09:26:11 -0700
+    • Engine revision ee76268252
+    • Dart version 2.8.4
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.0)
+    • Android SDK at C:\Users\sdk\sdk
+    • Platform android-29, build-tools 29.0.0
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b04)
+    • All Android licenses accepted.
+
+[✓] Android Studio (version 3.6)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 45.1.1
+    • Dart plugin version 192.7761
+    • Java version OpenJDK Runtime Environment (build 1.8.0_212-release-1586-b04)
+
+[!] VS Code (version 1.43.2)
+    • VS Code at C:\Users\OLALEYE BOLU\AppData\Local\Programs\Microsoft VS Code
+    ✗ Flutter extension not installed; install from
+      https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected device (1 available)
+    • Infinix HOT 4 Lite • 0177910710500154 • android-arm • Android 6.0 (API 23)
+
+! Doctor found issues in 1 category.
+```
