@@ -21,6 +21,7 @@ class ResultPage extends StatefulWidget {
 class _ResultPageState extends State<ResultPage> {
   double wrongScorePer = 0;
   double correctScorePer = 0;
+  String resultStatement = "";
   @override
   void initState() {
     print("The Wrong Score : ${widget.wrongScore}");
@@ -28,6 +29,20 @@ class _ResultPageState extends State<ResultPage> {
     print("The Correct Score is : $correctScorePer");
     wrongScorePer = (widget.wrongScore / widget.totalScore) * 100.0;
     print("The Wrong Score is : %$wrongScorePer");
+    if (correctScorePer <= 69) {
+    } else if (correctScorePer > 69.0 && correctScorePer <= 79.0) {
+      resultStatement = "You definitely need to up your game, try again";
+    } else if (correctScorePer > 79.0 && correctScorePer <= 89.0) {
+      resultStatement = "Keep playing and you'd surely improve!";
+    } else if (correctScorePer > 89.0 && correctScorePer <= 109.0) {
+      resultStatement = "You are as smart as the next person.";
+    } else if (correctScorePer > 109.0 && correctScorePer <= 119.0) {
+      resultStatement = "You have an IQ above average.";
+    } else if (correctScorePer > 119.0 && correctScorePer <= 129.0) {
+      resultStatement = "You are incredibly smart";
+    } else if (correctScorePer > 130) {
+      resultStatement = "You are a genius!";
+    }
     super.initState();
   }
 
@@ -39,95 +54,71 @@ class _ResultPageState extends State<ResultPage> {
         centerTitle: true,
         backgroundColor: Color(0xFF040c4f),
       ),
-      body: Container(
-        padding: EdgeInsets.all(20),
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(gradient: gradientBg),
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Expanded(
-                flex: 2,
-                child: Center(
-                    child: Text(
-                  widget.result,
-                  style: Theme.of(context).textTheme.headline3,
-                )),
-              ),
-              Expanded(
-                flex: 3,
-                child: ResultChart(
-                  correctScore: widget.correctScore,
-                  correctScorePer: correctScorePer,
-                  wrongScore: widget.wrongScore,
-                  wrongScorePer: wrongScorePer,
-                  totalScore: widget.totalScore,
+      body: SingleChildScrollView(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          decoration: BoxDecoration(gradient: gradientBg),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Expanded(
+                  flex: 2,
+                  child: Center(
+                      child: Text(
+                    widget.result,
+                    style: Theme.of(context).textTheme.headline3,
+                  )),
                 ),
-              ),
-              Expanded(
-                flex: 1,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    alignment: Alignment.center,
-                    width: MediaQuery.of(context).size.width * .9,
-                    margin: EdgeInsets.symmetric(vertical: 10),
-                    padding: EdgeInsets.all(3),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(35),
-                      highlightColor: Colors.green,
-                      onTap: () {
-                        brainy.reset();
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                (WelcomeScreen())));
-                      },
-                      child: Container(
-                        width: MediaQuery.of(context).size.width * .9,
-                        padding: EdgeInsets.symmetric(
-                          vertical: 20,
-                        ),
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Center(
-                          child: Text(
-                            'Done',
-                            style: Theme.of(context).textTheme.bodyText1,
+                Expanded(
+                  flex: 3,
+                  child: ResultChart(
+                    correctScore: widget.correctScore,
+                    correctScorePer: correctScorePer,
+                    wrongScore: widget.wrongScore,
+                    wrongScorePer: wrongScorePer,
+                    totalScore: widget.totalScore,
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width * .9,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      padding: EdgeInsets.all(3),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(35),
+                        highlightColor: Colors.green,
+                        onTap: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      (WelcomeScreen())));
+                        },
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .9,
+                          padding: EdgeInsets.symmetric(
+                            vertical: 20,
+                          ),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Center(
+                            child: Text(
+                              'Done',
+                              style: Theme.of(context).textTheme.bodyText1,
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                  // child: Container(
-                  //   child: InkWell(
-                  //       onTap: () {
-                  //         brainy.reset();
-                  //         Navigator.of(context).pushReplacement(
-                  //             MaterialPageRoute(
-                  //                 builder: (BuildContext context) =>
-                  //                     (WelcomeScreen())));
-                  //       },
-                  //       child: Container(
-                  //         padding: EdgeInsets.symmetric(
-                  //             vertical: 20,
-                  //             horizontal:
-                  //                 MediaQuery.of(context).size.width * .3),
-                  //         decoration: BoxDecoration(
-
-                  //             border: Border.all(color: Colors.white),
-                  //             borderRadius: BorderRadius.circular(30)),
-                  //         child: Text(
-                  //           'Done',
-                  //           style: Theme.of(context).textTheme.bodyText1,
-                  //         ),
-                  //       )),
-                  // ),
                 ),
-              ),
-            ]),
+              ]),
+        ),
       ),
     );
   }
@@ -136,6 +127,7 @@ class _ResultPageState extends State<ResultPage> {
 class ResultChart extends StatelessWidget {
   final GlobalKey<AnimatedCircularChartState> _chartKey =
       new GlobalKey<AnimatedCircularChartState>();
+
   final _chartSize = const Size(300.0, 300.0);
 
   final double correctScore;
@@ -174,7 +166,7 @@ class ResultChart extends StatelessWidget {
       ],
       chartType: CircularChartType.Radial,
       percentageValues: true,
-      holeLabel: 'IQ',//'${correctScore.toInt()}/${totalScore.toInt()}',
+      holeLabel: 'IQ', //'${correctScore.toInt()}/${totalScore.toInt()}',
       labelStyle: Theme.of(context).textTheme.headline1,
     );
   }
