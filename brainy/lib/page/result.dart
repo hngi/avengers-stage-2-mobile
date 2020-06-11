@@ -24,16 +24,15 @@ class _ResultPageState extends State<ResultPage> {
   double wrongScorePer = 0;
   double correctScorePer = 0;
   String resultStatement = "";
-  
+
   @override
   void initState() {
-    
-    correctScorePer = (widget.correctScore / widget.totalScore) * 100.0;
-    
-    wrongScorePer = (widget.wrongScore / widget.totalScore) * 100.0;
-    
+    correctScorePer = (widget.correctScore / widget.totalScore) * 150.0;
+
+    wrongScorePer = (widget.wrongScore / widget.totalScore) * 150.0;
+
     if (widget.correctScore <= 69) {
-      resultStatement = "I see no future in you.";
+      resultStatement = "";
     } else if (widget.correctScore > 69.0 && widget.correctScore <= 79.0) {
       resultStatement = "You definitely need to up your game, try again";
     } else if (widget.correctScore > 79.0 && widget.correctScore <= 89.0) {
@@ -54,46 +53,54 @@ class _ResultPageState extends State<ResultPage> {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
     PreferredSize appBar = PreferredSize(
-      preferredSize: Size(mediaQuery.size.width, mediaQuery.size.height*.1),
-      child:AppBar(
-        title: Text("IQ Result", style: Theme.of(context).textTheme.headline3),
-        centerTitle: true,
-        backgroundColor: Theme.of(context).accentColor,
-        actions: <Widget>[
-          IconButton(
-            iconSize: 25,
-            onPressed: ()=>showAboutPage(context),
-            icon: Icon(Icons.info),
+        preferredSize: Size(mediaQuery.size.width, mediaQuery.size.height * .1),
+        child: AppBar(
+          title:
+              Text("IQ Result", style: Theme.of(context).textTheme.headline3),
+          centerTitle: true,
+          backgroundColor: Theme.of(context).accentColor,
+          actions: <Widget>[
+            IconButton(
+              iconSize: 25,
+              onPressed: () => showAboutPage(context),
+              icon: Icon(Icons.info),
             ),
-          
-        ],
-
-      )
-    );
+          ],
+        ));
     return Scaffold(
       appBar: appBar,
       body: SingleChildScrollView(
         child: Container(
           width: mediaQuery.size.width,
-          height: mediaQuery.size.height-appBar.preferredSize.height-mediaQuery.padding.top,
+          height: mediaQuery.size.height -
+              appBar.preferredSize.height -
+              mediaQuery.padding.top,
           decoration: BoxDecoration(gradient: gradientBg),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: mediaQuery.size.height*.03,),
+                SizedBox(
+                  height: mediaQuery.size.height * .03,
+                ),
                 Expanded(
                   flex: 1,
                   child: Container(
-                    width: mediaQuery.size.width*.8,
+                    width: mediaQuery.size.width * .8,
                     child: Column(
                       children: <Widget>[
                         Align(
-                          alignment: Alignment.topLeft,
-                          child: Text("Dear ${widget.username},", style: Theme.of(context).textTheme.bodyText1,)),
-                        Center(
+                            alignment: Alignment.topLeft,
                             child: Text(
-                          resultStatement,
-                          style: Theme.of(context).textTheme.headline3,
+                              "Dear ${widget.username},",
+                              style: Theme.of(context).textTheme.headline3,
+                            )),
+                        Center(
+                            child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            resultStatement,
+                            style: Theme.of(context).textTheme.headline3,
+                          ),
                         )),
                       ],
                     ),
@@ -115,10 +122,9 @@ class _ResultPageState extends State<ResultPage> {
                     alignment: Alignment.bottomCenter,
                     child: Container(
                       alignment: Alignment.center,
-                      height: mediaQuery.size.height*.1,
+                      height: mediaQuery.size.height * .1,
                       width: mediaQuery.size.width * .9,
                       margin: EdgeInsets.symmetric(vertical: 10),
-                      
                       child: InkWell(
                         borderRadius: BorderRadius.circular(35),
                         highlightColor: Colors.green,
@@ -147,6 +153,9 @@ class _ResultPageState extends State<ResultPage> {
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 20.0,
+                )
               ]),
         ),
       ),
@@ -177,18 +186,23 @@ class ResultChart extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: <Widget>[
-        
         Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children:<Widget>[
-          Image(
-            image: ExactAssetImage("assets/brain.png"),
-            width: 150,
-            height: 150,
-            ),
-            Text("% ${correctScorePer.toString()}", style: Theme.of(context).textTheme.headline2,)
-        ]),
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image(
+                image: ExactAssetImage("assets/brain.png"),
+                width: 150,
+                height: 150,
+              ),
+              Padding(
+                padding: EdgeInsets.all(4.0),
+                child: Text(
+                  " ${correctScorePer.toInt().toString()}",
+                  style: Theme.of(context).textTheme.headline2,
+                ),
+              )
+            ]),
         new AnimatedCircularChart(
           key: _chartKey,
           size: _chartSize,
@@ -210,7 +224,7 @@ class ResultChart extends StatelessWidget {
             ),
           ],
           chartType: CircularChartType.Radial,
-          percentageValues: true,
+          percentageValues: false,
         ),
       ],
     );
