@@ -1,0 +1,13 @@
+IQQuestion("What is the result of 2+2*2-2/2 ?", ['2', '3', '4', '5'], "5", "Using BODMAS evaluate 2/2 then subtract from 2-2 then add the answer to 2"),
+
+IQQuestion("Word association: find a word that associates with the following sets of words. Cake, swiss, cottage", ['Cheese', 'Pie', 'Sandwich', 'Sweet'], 'Cheese', 'They are related to Cheese'),
+
+IQQuestion("Word association: find a word that associates with the following sets of words. Glasses, screen, day", ['Night', 'Day', 'Summer', 'Hot'], 'Day', 'They are related to day'),
+
+IQQuestion("Divide 30 by ½ and add 10. What’s the answer?", ['60', '50', '70', '80'] '70', 'You’re dividing 30 by ½, not by two. Thirty divided by ½ is the same thing as multiplying it by two, which is 60. Plus 10 makes 70!'),
+
+IQQuestion("A clerk at the butcher shop is six feet tall and wears size 10 shoes. What does he weigh?", ['shoes', 'meat', 'fish', 'food'], 'meat', "He works at the butcher shop, so he weighs meat for a living."),
+
+IQQuestion("A farmer has 19 sheep on his land. One day, a big storm hits and all but seven run away. How many sheep does the farmer have left?", ["0", '19', "7", 'None'], "7", "The riddle says all but seven run away, meaning there are seven left who didn’t."),
+
+IQQuestion("When Ashley was 15, her mother was 37. Now, her mother is twice her age. How old is Ashley?", ["30", "45", "37", "22"], "22", "Ashley is 22. Her mother is 22 years older, so when Ashley is 22, she’s now half her mother’s age."),
