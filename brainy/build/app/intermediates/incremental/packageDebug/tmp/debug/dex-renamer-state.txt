@@ -1,0 +1,4 @@
+#Thu Jun 11 11:18:05 WAT 2020
+base.0=/Users/jimohbabatunde/Desktop/avengers_fork_repo/avengers-stage-2-mobile/brainy/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

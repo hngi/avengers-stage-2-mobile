@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "135da5d20372ac0fc06d30c3d5cf8232"
+build_time: [1591874602, 245286000]
+inputs:
+  "/Users/jimohbabatunde/Desktop/avengers_fork_repo/avengers-stage-2-mobile/brainy/ios/Runner/AppDelegate.swift": [1591870488, 804612660]
