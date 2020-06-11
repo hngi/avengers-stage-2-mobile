@@ -1,104 +1,21 @@
-1. i don't have eyes, nose, ears and tongue but i can see, hear and taste everything 
-What am I?
-Ans. Brain 
-
-
-2.Find the answer that best completes the analogy:
-
-Book is to Reading as Fork is to:
-a. drawing
-b. writing
-c. stirring
-d. eating
-
-Answer: d.
-
-3.Which of the following can be arranged into a 5-letter English word?
-a. H R G S T
-b. R I L S A
-c. T O O M T
-d. W Q R G S
-
-Answer: b. rails and c. motto
-
-4.What number best completes the analogy:
-8:4 as 10:
-a. 3
-b. 7
-c.24
-d.5
-
-The answer is 5 because 4 is half of 8, and 5 is half of 10.
-
-
-5. One rabbit saw 6 elephants while going towards River. 
+IQQuestion("I don't have eyes, nose, ears and tongue but i can see, hear and taste everything.
+ What am I? ["I" "Can't "Tell" "You"]", "Ans: Brain", " The Brain records everything in an around"),
+IQQuestion("Find the answer that best completes the analogy: Book is to Reading as Fork is to: ", ["drawing" "writing" "stirring" "eating"], "Ans :d")
+IQQuestion("Which of the following can be arranged into a 5-letter English word?", ["H R G S T" "R I L S A" "T O O M T" "W Q R G S"]", "Ans: b. rails and c. motto",)
+IQQuestion("What number best completes the analogy: 8:4 as 10:", ["3""7""24""5"], "Ans: The answer is 5", "because 4 is half of 8, and 5 is half of 10")
+IQQuestion("One rabbit saw 6 elephants while going towards River. 
 Every elephant saw 2 monkeys going towards the river.
 Every monkey holds one tortoise in their hands.
-How many animals are going towards the river?
-A) 14
-B) 11
-C) 8
-D) 5
-Answer:5 
-Explanation: From the given data, 1 rabbit is going towards the river not the 6 elephants, a
+How many animals are going towards the river?", ["14" "11" "8" "5"],"Ans: 5", "From the given data, 1 rabbit is going towards the river not the 6 elephants, a
 nd these six elephants saw 2 monkeys going towards the river, with each monkey holding1 tortoise.
-So 1 rabbit + 2 monkeys + 2 tortoise = 5
-
-6. Look at this series: 12, 11, 13, 12, 14, 13, … What number should come next?
-A. 10
-B. 16
-C. 13
-D. 15
-Answer: Option D. This is an alternating number of subtraction series. First, 1 is subtracted, then 2 is added.
-
-7. Question: Why are 1968 pennies worth more than 1967 pennies?
-Answer
-Because there is one more penny in 1968 pennies than in 1967 pennies.
-
-8. Questions: There are eight men sitting on a couch. Three legs break and six men leave. How many legs are remaining?
-Answer
-Five; the legs of the two remaining men (4) and the remaining couch leg.
-
-9. Question: What is the maximum number of times a single page of a newspaper can be folded in half by hand?
-Answer
-Only once, because after that you will be folding it into quarters, eighths, etc.
-
+So 1 rabbit + 2 monkeys + 2 tortoise = 5")
+IQQuestion("Look at this series: 12, 11, 13, 12, 14, 13, … What number should come next?", ["10" "16" "13" "15"], "Ans D", "This is an alternating number of subtraction series. First, 1 is subtracted, then 2 is added.")
+IQQuestion("Why are 1968 pennies worth more than 1967 pennies?", "No option on this"], "Ans :Because there is one more penny in 1968 pennies than in 1967 pennies.")
+IQQuestion(" There are eight men sitting on a couch. Three legs break and six men leave. How many legs are remaining?", "Ans: Five", "the legs of the two remaining men (4) and the remaining couch leg.") 
+IQQuestion("What is the maximum number of times a single page of a newspaper can be folded in half by hand?", "Ans: Only once", "because after that you will be folding it into quarters, eighths, etc.")
 IQQuestion("If you divide 30 by half and add ten, what do you get? ", ["No option on this"], "The answer is 70. Half is 0.5. If you divide 30 by 0.5, you get 60. Add ten and you have 70."),
 IQQuestion("Which word does NOT belong with the others? ", ["index","glossary","chapter","book"], "The answer is D. Book. Rest are all parts of a book."),
 IQQuestion("Pick the odd man out? ",["just","fair","equitable","biased"], "The answer is D. Biased. The others signify honesty."),
 IQQuestion("CUP : LIP :: BIRD : ?", ["GRASS","FOREST","BEAK","BUSH"], "The answer is C. BEAK. You drink out of a cup with your lips. Similarly, birds bite grass with their beaks."),
 IQQuestion("Paw : Cat :: Hoof : ?", ["Lamb","Horse","Elephant","Tiger"], "The answer is B. Horse. Cat’s feet are called paws and horse’s are called hoofs."),
 IQQuestion("Safe : Secure :: Protect :", ["Lock","Guard","Sure","Conserve"], "The answer is B. Guard"),
-
-16. Melt : Liquid :: Freeze :
-A. Ice
-B. Solid
-C. Condense
-D. Push
-Answer: B. Solid
-
-
-17. Choose what number represents the Roman numeral: LXI
-51
-98
-61
-20
-Answer is C. L is 50, X is 10, I is 1. Hence, 50+10+1=61.
-
-18. What is it that is greater than God?
-more Evil than the Devil, 
-the Rich Wants it and 
-the poor man have it
-Ans. Nothing. 
-Nothing Evil than the Devil, The rich need nothing the poor have nothing. 
-
-19. Hom many times can you subtract 10 from 100?
-a. 5 times 
-b. 10 times 
-c. 1 times only 
-b. 100 times 
-Answer is C - The next times you will be subtracting from 90. 
-
-20. Which number should come next in the pattern?
-37, 34, 31, 28
-Answer: 25, the numbers are decreasing by 3
