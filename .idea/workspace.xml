@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7a2c799-0c24-4dcd-8848-dec5be01ba8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/brainy/assets/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brainy/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brainy/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brainy/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/brainy/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/avengers-stage-2-mobile.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
