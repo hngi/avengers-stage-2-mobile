@@ -56,17 +56,17 @@ List<IQQuestion> iqQuestionBank = [
       "Which of the following can be arranged into a 5-letter English word? ",
       ["H R G S T", "R I L S A", "T O O M T", "W Q R G S"],
       "R I L S A"),
-  IQQuestion("What number best completes the analogy: 8:4 as 10:",
+  IQQuestion("What number best completes the analogy: 8:4 as 10:?",
       ["3", "7", "24", "5"], "5"),
   IQQuestion(
-      "One rabbit saw 6 elephants while going towards River. Every elephant saw 2 monkeys going towards the river. Every monkey holds one tortoise in their hands. How many animals are going towards the river?",
+      "One rabbit saw 6 elephants while going towards the river. Every elephant saw 2 monkeys going towards the river. Every monkey holds one turtle in their hand. How many animals are going towards the river?",
       ["14", "11", "8", "5"],
       "5"),
   IQQuestion(
-      "Look at this series: 12, 11, 13, 12, 14, 13, … What number should come next?",
+      "In the series: 12, 11, 13, 12, 14, 13, … What number should come next?",
       ["10", "16", "13", "15"],
       "15"),
-  IQQuestion("Melt : Liquid :: Freeze : ", ["Ice", "Solid", "Condense", "Push"],
+  IQQuestion("Melt : Liquid :: Freeze : ?", ["Ice", "Solid", "Condense", "Push"],
       "Solid"),
 
   IQQuestion("Choose what number represents the Roman numeral: LXI ",
@@ -75,7 +75,7 @@ List<IQQuestion> iqQuestionBank = [
       ["5 times ", "10 times", "1 times only", "100 times"], "1 times only"),
   IQQuestion("Which word does NOT belong with the others? ",
       ["index", "glossary", "chapter", "book"], "book"),
-  IQQuestion("Pick the odd man out? ", ["just", "fair", "equitable", "biased"],
+  IQQuestion("Pick the odd one out? ", ["just", "fair", "equitable", "biased"],
       "biased"),
   IQQuestion(
       "CUP : LIP :: BIRD : ?", ["GRASS", "FOREST", "BEAK", "BUSH"], "BEAK"),
@@ -83,14 +83,14 @@ List<IQQuestion> iqQuestionBank = [
       "Paw : Cat :: Hoof : ?", ["Lamb", "Horse", "Elephant", "Tiger"], "Horse"),
   IQQuestion("Safe : Secure :: Protect :",
       ["Lock", "Guard", "Sure", "Conserve"], "Guard"),
-  IQQuestion("'Rhythm of eyes' city name in India? ",
+  IQQuestion(" What does the phrase 'Rhythm of eyes' mean?",
       ["Chennai", "Nainital", "Srinagar", "Karnataka"], "Nainital"),
   IQQuestion(
     "Select the one which is different from the other three responses",
     ["1", "65", "8", "64"],
     "65",
   ),
-  IQQuestion("Which word is the odd man out?",
+  IQQuestion("Which word is the odd one out?",
       ["trivial", "unimportant", "important", "insignificant"], "important"),
   IQQuestion("Which word does NOT belong with the others?",
       ["wing", "fin", "beak", "rudder"], "beak"),
@@ -110,7 +110,7 @@ List<IQQuestion> iqQuestionBank = [
       ["0", '19', "7", 'None'],
       "7"),
   IQQuestion(
-      "Word association: find a word that associates with the following sets of words. Glasses, screen, day",
+      "Find a word that associates with the following sets of words: Glasses, Screen, Day",
       ['Night', 'Day', 'Summer', 'Hot'],
       'Day'),
   IQQuestion("Divide 30 by ½ and add 10. What’s the answer?",
@@ -120,7 +120,7 @@ List<IQQuestion> iqQuestionBank = [
       ["100", "132", "145", "144"],
       "132"),
   IQQuestion(
-      "The day after the day after tomorrow is four days before Monday. What day is it todayT",
+      "The day after the day after tomorrow is four days before Monday. What day is it today?",
       ["Monday", " Tuesday", "Wednesday", "Thursday"],
       "Monday"),
   IQQuestion(
@@ -142,9 +142,9 @@ List<IQQuestion> iqQuestionBank = [
       ["Uncle", "Nephew", "Father", "Cannot be determined"],
       "Uncle"),
   IQQuestion(
-      "Parts : Strap :: Wolf :", ["Flow", "Animal", "Wood", "Fox"], "Flow"),
-  IQQuestion("5:36:6: ", ["25", "38", "49", "52"], "49"),
-  IQQuestion("7:10:8:11:9:12: ", ["7", "12", "10", "13"], "10"),
+      "Parts : Strap :: Wolf : ?", ["Flow", "Animal", "Wood", "Fox"], "Flow"),
+  IQQuestion("5:25:6: ?", ["36", "38", "49", "52"], "36"),
+  IQQuestion("7:10:8:11:9:12: ?", ["7", "12", "10", "13"], "10"),
   IQQuestion(
       "A woman said, “His brother’s father is the only son of my grandfather.” How is the woman related to this man?",
       ["Mother", "Aunt", "Sister", "Grandmother"],
