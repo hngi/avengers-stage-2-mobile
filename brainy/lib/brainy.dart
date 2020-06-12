@@ -7,7 +7,7 @@ class Brainy {
   int _questionNumber = 0;
   String response = "";
   int totalQuestions = 0;
-  double _totalScore = 150.0;
+  double _totalScore = 0.0;
   final String username;
 
   IQQuestionBank iqQuestionBank = IQQuestionBank();
@@ -15,6 +15,7 @@ class Brainy {
   Brainy({this.username}) {
     _questionBank = iqQuestionBank.iqQuestions(20);
     totalQuestions = _questionBank.length;
+    _totalScore = _questionBank.length.toDouble();
     for (int i = 0; i < _questionBank.length; i++) {
       _questionBank[i].options.shuffle();
     }
@@ -60,11 +61,11 @@ class Brainy {
     return _questionNumber;
   }
 
-  void incrementScore({score = 15}) {
+  void incrementScore({score = 1}) {
     _correctResponse += score;
   }
 
-  void decrementScore({score = 15}) {
+  void decrementScore({score = 1}) {
     _wrongResponse += score;
   }
 

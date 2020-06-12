@@ -30,20 +30,23 @@ class _ResultPageState extends State<ResultPage> {
     correctScorePer = (widget.correctScore / widget.totalScore) * 150.0;
 
     wrongScorePer = (widget.wrongScore / widget.totalScore) * 150.0;
+    print(correctScorePer);
+    print(wrongScorePer);
+    print(widget.totalScore);
 
-    if (widget.correctScore <= 69) {
+    if (correctScorePer <= 69) {
       resultStatement = "Your IQ is low, you need more brain exercises.";
-    } else if (widget.correctScore > 69.0 && widget.correctScore <= 79.0) {
+    } else if (correctScorePer > 69.0 && correctScorePer <= 79.0) {
       resultStatement = "You definitely need to up your game, try again.";
-    } else if (widget.correctScore > 79.0 && widget.correctScore <= 89.0) {
+    } else if (correctScorePer > 79.0 && correctScorePer <= 89.0) {
       resultStatement = "Keep playing and you'd surely improve!";
-    } else if (widget.correctScore > 89.0 && widget.correctScore <= 109.0) {
+    } else if (correctScorePer > 89.0 && correctScorePer <= 109.0) {
       resultStatement = "You are as smart as the next person.";
-    } else if (widget.correctScore > 109.0 && widget.correctScore <= 119.0) {
+    } else if (correctScorePer > 109.0 && correctScorePer <= 119.0) {
       resultStatement = "You have an IQ above average.";
-    } else if (widget.correctScore > 119.0 && widget.correctScore <= 129.0) {
+    } else if (correctScorePer > 119.0 && correctScorePer <= 129.0) {
       resultStatement = "You are incredibly smart!";
-    } else if (widget.correctScore > 130) {
+    } else if (correctScorePer > 130) {
       resultStatement = "You are a genius!";
     }
     super.initState();
@@ -155,9 +158,6 @@ class _ResultPageState extends State<ResultPage> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20.0,
-                )
               ]),
         ),
       ),

@@ -11,7 +11,11 @@ class _OnBoardingState extends State<OnBoarding> {
   @override
   void initState() {
     super.initState();
-    SystemChrome.setEnabledSystemUIOverlays([]);
+
+    SystemUiOverlayStyle.light.copyWith(
+      statusBarColor: Colors.transparent,
+    );
+//        systemNavigationBarColor: Colors.transparent);
   }
 
   @override
@@ -22,7 +26,7 @@ class _OnBoardingState extends State<OnBoarding> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
           Container(
-            margin: EdgeInsets.only(top:42.0, bottom: 42.0),
+            margin: EdgeInsets.only(top: 42.0, bottom: 42.0),
             child: Image.asset(
               'assets/brain.png',
               height: 100.0,
@@ -50,20 +54,25 @@ class _OnBoardingState extends State<OnBoarding> {
                   color: Colors.black),
             ),
           ),
-          Container(
-            width: 200.0,
-            margin: EdgeInsets.only(left: 8.0, right: 8.0, top: 40.0),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                color: Color(0xFF040c4f)),
-            child: FlatButton(
-              onPressed: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => WelcomeScreen()));
-              },
-              child: Text(
-                "Go",
-                style: TextStyle(fontSize: 20.0, color: Color(0XFFFFFFFF), fontWeight: FontWeight.w600),
+          InkWell(
+            child: Container(
+              width: 200.0,
+              margin: EdgeInsets.only(left: 8.0, right: 8.0, top: 40.0),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  color: Color(0xFF040c4f)),
+              child: FlatButton(
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => WelcomeScreen()));
+                },
+                child: Text(
+                  "Go",
+                  style: TextStyle(
+                      fontSize: 20.0,
+                      color: Color(0XFFFFFFFF),
+                      fontWeight: FontWeight.w600),
+                ),
               ),
             ),
           )

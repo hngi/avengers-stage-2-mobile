@@ -28,7 +28,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
 
   void timeOutTimer() {
     int leftQuestion = brainy.totalQuestions - brainy.currentQuestion();
-    int wrongResponse = leftQuestion * 15;
+    int wrongResponse = leftQuestion;
     brainy.decrementScore(score: wrongResponse);
     IQEnds(
       msg: 'You have run out of time, proceed to your result',
