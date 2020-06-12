@@ -1,6 +1,7 @@
+import 'package:brainy/page/home.dart';
 import 'package:brainy/onboarding.dart';
-import 'package:brainy/theme/theme.dart';
 import 'package:brainy/page/welcome.dart';
+import 'package:brainy/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -20,6 +21,10 @@ class MainThread extends StatelessWidget {
     return MaterialApp(
       theme: themeLight,
       debugShowCheckedModeBanner: false,
+
+      home: //SplashScrren() The Android Native Splash is in Use,
+      HomeScreen(),
+
         initialRoute: onBoardCount == 0 || onBoardCount == null
             ? 'onBoarding'
             : 'WelcomeScreen',
