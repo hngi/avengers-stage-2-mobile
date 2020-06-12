@@ -89,7 +89,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                   Text('I\'m Brainy\nYour IQ Evaluator\n\n',
                       style: Theme.of(context).textTheme.headline2),
-                  Text('What can i call you?',
+                  Text('What can I call you?',
                       style: Theme.of(context).textTheme.headline3),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * .03,
