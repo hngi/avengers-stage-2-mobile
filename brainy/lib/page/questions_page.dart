@@ -31,7 +31,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
     int wrongResponse = leftQuestion * 15;
     brainy.decrementScore(score: wrongResponse);
     IQEnds(
-      msg: 'You have run out of time, proceed for the result',
+      msg: 'You have run out of time, proceed to your result',
       correctScore: brainy.correctResponse,
       wrongScore: brainy.wrongResponse,
       totalScore: brainy.totalScore,

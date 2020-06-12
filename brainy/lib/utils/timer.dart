@@ -30,16 +30,18 @@ class _TimerState extends State<Timer> with TickerProviderStateMixin {
     controller = AnimationController(
       vsync: this,
 //if the number of questions change, the duration should be linked with it
-      duration: Duration(minutes: 2, seconds: 1),
+      duration: Duration(minutes: 6, seconds: 1),
     );
 //if the number of questions change, the duration should be linked with it
-    controller.reverse(from: 3).whenComplete(() => widget.callBackFunc());
+    controller.reverse(from: 6).whenComplete(() => widget.callBackFunc());
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    if (widget.shouldDispose) {controller.stop();}
+    if (widget.shouldDispose) {
+      controller.stop();
+    }
     return AnimatedBuilder(
         animation: controller,
         builder: (BuildContext context, Widget child) {
@@ -54,11 +56,10 @@ class _TimerState extends State<Timer> with TickerProviderStateMixin {
           );
         });
   }
-@override
+
+  @override
   void dispose() {
     controller.dispose();
     super.dispose();
   }
-
 }
-

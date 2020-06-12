@@ -32,9 +32,9 @@ class _ResultPageState extends State<ResultPage> {
     wrongScorePer = (widget.wrongScore / widget.totalScore) * 150.0;
 
     if (widget.correctScore <= 69) {
-      resultStatement = "";
+      resultStatement = "Your IQ is low, you need more brain exercises.";
     } else if (widget.correctScore > 69.0 && widget.correctScore <= 79.0) {
-      resultStatement = "You definitely need to up your game, try again";
+      resultStatement = "You definitely need to up your game, try again.";
     } else if (widget.correctScore > 79.0 && widget.correctScore <= 89.0) {
       resultStatement = "Keep playing and you'd surely improve!";
     } else if (widget.correctScore > 89.0 && widget.correctScore <= 109.0) {
@@ -42,7 +42,7 @@ class _ResultPageState extends State<ResultPage> {
     } else if (widget.correctScore > 109.0 && widget.correctScore <= 119.0) {
       resultStatement = "You have an IQ above average.";
     } else if (widget.correctScore > 119.0 && widget.correctScore <= 129.0) {
-      resultStatement = "You are incredibly smart";
+      resultStatement = "You are incredibly smart!";
     } else if (widget.correctScore > 130) {
       resultStatement = "You are a genius!";
     }
@@ -53,8 +53,8 @@ class _ResultPageState extends State<ResultPage> {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
     PreferredSize appBar = PreferredSize(
-      
-        preferredSize: Size(mediaQuery.size.width, mediaQuery.size.height * .09),
+        preferredSize:
+            Size(mediaQuery.size.width, mediaQuery.size.height * .09),
         child: AppBar(
           elevation: 10,
           title:
