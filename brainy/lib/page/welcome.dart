@@ -1,6 +1,8 @@
 import 'package:brainy/page/about_app.dart';
+import 'package:brainy/page/home.dart';
 import 'package:brainy/page/questions_page.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../theme/theme.dart';
 
@@ -13,7 +15,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   String validatorErrorText;
   double keyboardVisbleHeight = 0.5;
   TextEditingController usernameTextController = TextEditingController();
-
+  
   void validateUserInput() {
     var username = usernameTextController.text.toString().trim();
     final RegExp nameRegExp = RegExp('[a-zA-Z]');
@@ -28,12 +30,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     });
   }
 
-  void registerUser() {
+  void registerUser() async{
+    
     validateUserInput();
     if (validatorErrorText == null && usernameTextController.text.isNotEmpty) {
+      SharedPreferences pref = await SharedPreferences.getInstance();
+     await pref.setString("username", usernameTextController.text);
       Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (ctx) =>
-              QuestionsPage(username: usernameTextController.text)));
+              HomeScreen()
+              ));
     }
   }
 

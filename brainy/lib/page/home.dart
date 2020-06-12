@@ -1,15 +1,37 @@
+import 'dart:math' as math;
 import 'package:brainy/page/questions_page.dart';
+import 'package:brainy/page/welcome.dart';
 import 'package:brainy/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class HomeScreen extends StatelessWidget {
-  route({routeTo, context}) {
+  
+
+class HomeScreen extends StatefulWidget {
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String name;
+  SharedPreferences sharedPrefs;
+@override
+void initState() {
+  super.initState();
+  SharedPreferences.getInstance().then((prefs) {
+    setState(() => sharedPrefs = prefs);
+  });
+}
+
+  route({routeTo, context}) async{
     if (routeTo == "welcome") {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (ctx) => QuestionsPage(username: "username")));
+          builder: (ctx) => WelcomeScreen()));
     } else if (routeTo == "IQTest") {
+      SharedPreferences pref = await SharedPreferences.getInstance();
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (ctx) => QuestionsPage(username: "username")));
+          builder: (ctx) => QuestionsPage(username: pref.getString("username"))));
     }else{
       // alert no route found
     }
@@ -18,6 +40,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
+    
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(gradient: gradientBg),
@@ -34,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                   text: "Welcome",
                   style: Theme.of(context).textTheme.headline1),
               TextSpan(
-                  text: "\n \t\t Shaaji Bemshima",
+                  text: "\n \t\t ${sharedPrefs==null? '' : sharedPrefs.getString("username")}",
                   style: Theme.of(context).textTheme.headline2),
             ])),
           ),
@@ -61,10 +84,14 @@ class HomeScreen extends StatelessWidget {
           Positioned(
             top: mediaQuery.size.height * .23,
             left: mediaQuery.size.width * .2,
-            child: Image(
-              width: 230,
-              height: 230,
-              image: ExactAssetImage("assets/brain.png"),
+            child: Transform(
+              alignment: Alignment.center,
+               transform: Matrix4.rotationY(math.pi),
+                          child: Image(
+                width: 230,
+                height: 230,
+                image: ExactAssetImage("assets/brain.png"),
+              ),
             ),
           ),
           Positioned(
@@ -76,7 +103,7 @@ class HomeScreen extends StatelessWidget {
               children: <Widget>[
                 Center(
                   child: Text(
-                    "To help Evaluate your IQ,\ni will be asking some random questions. Your response will be used in evaluating you",
+                    "To help Evaluate your IQ, i will be asking some random questions. Your response will be used in evaluation. Good Luck!!!",
                     style: TextStyle(
                         color: Colors.black, fontSize: 20, fontFamily: 'Lato'),
                   ),
@@ -95,23 +122,23 @@ class HomeScreen extends StatelessWidget {
                 RaisedButton(
                   color: Theme.of(context).colorScheme.error,
                   textColor: Theme.of(context).colorScheme.secondary,
-                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
                   onPressed: ()=>route(routeTo: "welcome", context: context),
-                  child: Text("Close"),
+                  child: Text("Change Name"),
                 ),
                 RaisedButton(
 
                   color: Colors.green,
                   textColor: Theme.of(context).colorScheme.secondary,
-                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  padding: EdgeInsets.symmetric(horizontal: 20),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
                   onPressed: ()=>route(routeTo: "IQTest", context: context),
-                  child: Text("Begin"),
+                  child: Text("Begin IQ Test"),
                 ),
               ],
             ),

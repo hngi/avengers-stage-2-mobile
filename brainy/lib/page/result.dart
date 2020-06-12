@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:brainy/page/about_app.dart';
-import 'package:brainy/page/welcome.dart';
+import 'package:brainy/page/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
 
@@ -27,6 +27,7 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   void initState() {
+    print("The total Score am getting is : ${widget.totalScore}");
     correctScorePer = (widget.correctScore / widget.totalScore) * 150.0;
 
     wrongScorePer = (widget.wrongScore / widget.totalScore) * 150.0;
@@ -137,7 +138,7 @@ class _ResultPageState extends State<ResultPage> {
                           Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                   builder: (BuildContext context) =>
-                                      (WelcomeScreen())));
+                                      (HomeScreen())));
                         },
                         child: Container(
                           width: MediaQuery.of(context).size.width * .9,
