@@ -82,21 +82,21 @@ void initState() {
                 ),
               )),
           Positioned(
-            top: mediaQuery.size.height * .23,
+            top: mediaQuery.size.height * .25,
             left: mediaQuery.size.width * .2,
             child: Transform(
               alignment: Alignment.center,
                transform: Matrix4.rotationY(math.pi),
                           child: Image(
-                width: 230,
-                height: 230,
+                width: 180,
+                height: 180,
                 image: ExactAssetImage("assets/brain.png"),
               ),
             ),
           ),
           Positioned(
             width: mediaQuery.size.width * .7,
-            top: mediaQuery.size.height * .58,
+            top: mediaQuery.size.height * .56,
             left: mediaQuery.size.width * .15,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -105,7 +105,7 @@ void initState() {
                   child: Text(
                     "To help Evaluate your IQ, i will be asking some random questions. Your response will be used in evaluation. Good Luck!!!",
                     style: TextStyle(
-                        color: Colors.black, fontSize: 20, fontFamily: 'Lato'),
+                        color: Colors.black, fontSize: 16, fontFamily: 'Lato'),
                   ),
                 ),
                 SizedBox(height: mediaQuery.size.height * .2),
@@ -122,7 +122,7 @@ void initState() {
                 RaisedButton(
                   color: Theme.of(context).colorScheme.error,
                   textColor: Theme.of(context).colorScheme.secondary,
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -133,12 +133,12 @@ void initState() {
 
                   color: Colors.green,
                   textColor: Theme.of(context).colorScheme.secondary,
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
                   onPressed: ()=>route(routeTo: "IQTest", context: context),
-                  child: Text("Begin IQ Test"),
+                  child: Text("Begin"),
                 ),
               ],
             ),
