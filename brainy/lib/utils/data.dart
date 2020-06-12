@@ -75,13 +75,13 @@ List<IQQuestion> iqQuestionBank = [
       ["5 times ", "10 times", "1 times only", "100 times"], "1 times only"),
   IQQuestion("Which word does NOT belong with the others? ",
       ["index", "glossary", "chapter", "book"], "book"),
-  IQQuestion("Pick the odd one out? ", ["just", "fair", "equitable", "biased"],
-      "biased"),
+  IQQuestion("Pick the odd one out? ", ["Just", "Fair", "Equitable", "Biased"],
+      "Biased"),
   IQQuestion(
       "CUP : LIP :: BIRD : ?", ["GRASS", "FOREST", "BEAK", "BUSH"], "BEAK"),
   IQQuestion(
       "Paw : Cat :: Hoof : ?", ["Lamb", "Horse", "Elephant", "Tiger"], "Horse"),
-  IQQuestion("Safe : Secure :: Protect :",
+  IQQuestion("Safe : Secure :: Protect : ?",
       ["Lock", "Guard", "Sure", "Conserve"], "Guard"),
   IQQuestion(" What does the phrase 'Rhythm of eyes' mean?",
       ["Chennai", "Nainital", "Srinagar", "Karnataka"], "Nainital"),
@@ -93,7 +93,7 @@ List<IQQuestion> iqQuestionBank = [
   IQQuestion("Which word is the odd one out?",
       ["trivial", "unimportant", "important", "insignificant"], "important"),
   IQQuestion("Which word does NOT belong with the others?",
-      ["wing", "fin", "beak", "rudder"], "beak"),
+      ["Wing", "Fin", "Beak", "Rudder"], "Beak"),
   IQQuestion("Select the odd word from the given alternatives",
       ["Herb", "Flower", "Tree", "Shrub"], "Flower"),
   IQQuestion("What is the result of 2+2*2-2/2 ?", ['2', '3', '4', '5'], "5"),
@@ -103,8 +103,8 @@ List<IQQuestion> iqQuestionBank = [
       "22"),
   IQQuestion(
       "A clerk at the butcher shop is six feet tall and wears size 10 shoes. What does he weigh?",
-      ['shoes', 'meat', 'fish', 'food'],
-      'meat'),
+      ['Shoes', 'Meat', 'Fish', 'Food'],
+      'Meat'),
   IQQuestion(
       "A farmer has 19 sheep on his land. One day, a big storm hits and all but seven run away. How many sheep does the farmer have left?",
       ["0", '19', "7", 'None'],
