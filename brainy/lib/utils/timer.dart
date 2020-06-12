@@ -30,10 +30,10 @@ class _TimerState extends State<Timer> with TickerProviderStateMixin {
     controller = AnimationController(
       vsync: this,
 //if the number of questions change, the duration should be linked with it
-      duration: Duration(minutes: 5, milliseconds: 1000),
+      duration: Duration(minutes: 4, milliseconds: 1000),
     );
 //if the number of questions change, the duration should be linked with it
-    controller.reverse(from: 5).whenComplete(() => widget.callBackFunc());
+    controller.reverse(from: 4).whenComplete(() => widget.callBackFunc());
     super.initState();
   }
 
