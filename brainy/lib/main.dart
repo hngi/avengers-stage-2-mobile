@@ -1,5 +1,5 @@
+import 'package:brainy/page/home.dart';
 import 'package:brainy/theme/theme.dart';
-import 'package:brainy/page/welcome.dart';
 import 'package:flutter/material.dart';
 
 main(){
@@ -14,7 +14,7 @@ class MainThread extends StatelessWidget {
       theme: themeLight,
       debugShowCheckedModeBanner: false,
       home: //SplashScrren() The Android Native Splash is in Use,
-      WelcomeScreen(),
+      HomeScreen(),
     );
   }
 }
