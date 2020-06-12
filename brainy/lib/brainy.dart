@@ -39,7 +39,7 @@ class Brainy {
   }
 
   bool isFinished() {
-    if (_questionNumber >= _questionBank.length - 1) {
+    if (_questionNumber >= _questionBank.length-1) {
       return true;
     } else {
       return false;
@@ -60,12 +60,12 @@ class Brainy {
     return _questionNumber;
   }
 
-  void incrementScore() {
-    _correctResponse += 15;
+  void incrementScore({score=15}) {
+    _correctResponse += score;
   }
 
-  void decrementScore() {
-    _wrongResponse += 15;
+  void decrementScore({score=15}) {
+    _wrongResponse += score;
   }
 
   get correctResponse {

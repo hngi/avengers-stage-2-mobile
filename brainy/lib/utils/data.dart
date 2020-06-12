@@ -49,8 +49,8 @@ List<IQQuestion> iqQuestionBank = [
 */
   IQQuestion(
       "Find the answer that best completes the analogy: Book is to Reading as Fork is to: ",
-      ["drawing", "writing", "stirring", "eating"],
-      "stirring"),
+      ["Drawing", "Writing", "Stirring", "Eating"],
+      "Stirring"),
   // This question has two correct answers.
   IQQuestion(
       "Which of the following can be arranged into a 5-letter English word? ",
@@ -79,7 +79,6 @@ List<IQQuestion> iqQuestionBank = [
       "biased"),
   IQQuestion(
       "CUP : LIP :: BIRD : ?", ["GRASS", "FOREST", "BEAK", "BUSH"], "BEAK"),
-
   IQQuestion(
       "Paw : Cat :: Hoof : ?", ["Lamb", "Horse", "Elephant", "Tiger"], "Horse"),
   IQQuestion("Safe : Secure :: Protect :",
