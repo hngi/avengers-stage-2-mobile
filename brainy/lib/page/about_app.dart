@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 void showAboutPage(context){
     showAboutDialog(
+      
       context: context,
       applicationName: "Brainy IQ",
       applicationIcon: Image(

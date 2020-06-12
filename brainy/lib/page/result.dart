@@ -53,15 +53,17 @@ class _ResultPageState extends State<ResultPage> {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
     PreferredSize appBar = PreferredSize(
-        preferredSize: Size(mediaQuery.size.width, mediaQuery.size.height * .1),
+      
+        preferredSize: Size(mediaQuery.size.width, mediaQuery.size.height * .09),
         child: AppBar(
+          elevation: 10,
           title:
-              Text("IQ Result", style: Theme.of(context).textTheme.headline3),
+              Text("IQ Result", style: Theme.of(context).textTheme.headline4),
           centerTitle: true,
           backgroundColor: Theme.of(context).accentColor,
           actions: <Widget>[
             IconButton(
-              iconSize: 25,
+              iconSize: 20,
               onPressed: () => showAboutPage(context),
               icon: Icon(Icons.info),
             ),
