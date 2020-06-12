@@ -1,4 +1,10 @@
 # This is a generated file; do not edit or check into version control.
+<<<<<<< HEAD
 shared_preferences=/home/shaaji/Downloads/Programs/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.7+3/
 shared_preferences_macos=/home/shaaji/Downloads/Programs/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+10/
 shared_preferences_web=/home/shaaji/Downloads/Programs/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7/
+=======
+shared_preferences=C:\\Mobile Dev\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.7+3\\
+shared_preferences_macos=C:\\Mobile Dev\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-0.0.1+10\\
+shared_preferences_web=C:\\Mobile Dev\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_web-0.1.2+7\\
+>>>>>>> d47c3730da9ba3620e97372a28bf3aa16dfbdab6

@@ -39,7 +39,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
     return GestureDetector(
       onTap: () {
         FocusScopeNode currentFocus = FocusScope.of(context);
@@ -67,7 +66,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     child: IconButton(
                       iconSize: 30,
                       onPressed: () => showAboutPage(context),
-                      icon: Icon(Icons.info, color: Theme.of(context).colorScheme.secondary,),
+                      icon: Icon(
+                        Icons.info,
+                        color: Theme.of(context).colorScheme.secondary,
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -88,8 +90,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                   Center(
                     child: Container(
-                      width: MediaQuery.of(context).size.width * .7,
+                      width: MediaQuery.of(context).size.width * .8,
                       child: TextField(
+                        textCapitalization: TextCapitalization.words,
                         controller: usernameTextController,
                         cursorColor: Colors.white,
                         style: TextStyle(color: Colors.white, fontSize: 20),

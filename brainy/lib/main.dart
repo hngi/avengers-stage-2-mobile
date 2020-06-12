@@ -31,7 +31,7 @@ class MainThread extends StatelessWidget {
         routes: { "onBoarding": (context) => OnBoarding(),
           "WelcomeScreen": (context) => WelcomeScreen()}
 
-        //home: WelcomeScreen(), //SplashScrren() The Android Native Splash is in Use,
+        //home: WelcomeScreen(), //SplashScreen() The Android Native Splash is in Use,
     );
   }
 }

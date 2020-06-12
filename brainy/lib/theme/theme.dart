@@ -32,7 +32,9 @@ final themeLight = ThemeData(
           fontSize: 40,
           color: Colors.white,
           fontFamily: "Lato",
-          fontWeight: FontWeight.bold),
+          fontWeight: FontWeight.bold,
+        wordSpacing: 1.5,
+        letterSpacing: 1.5,),
       headline2:
           TextStyle(fontSize: 30, color: Colors.white, fontFamily: "Lato"),
       headline3:
