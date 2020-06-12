@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 import 'package:brainy/page/home.dart';
-=======
 import 'package:brainy/onboarding.dart';
->>>>>>> 3589b852ff5dfc60af01a419d6e3bb8c297d6244
+import 'package:brainy/page/welcome.dart';
 import 'package:brainy/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -23,10 +21,10 @@ class MainThread extends StatelessWidget {
     return MaterialApp(
       theme: themeLight,
       debugShowCheckedModeBanner: false,
-<<<<<<< HEAD
+
       home: //SplashScrren() The Android Native Splash is in Use,
       HomeScreen(),
-=======
+
         initialRoute: onBoardCount == 0 || onBoardCount == null
             ? 'onBoarding'
             : 'WelcomeScreen',
@@ -34,7 +32,6 @@ class MainThread extends StatelessWidget {
           "WelcomeScreen": (context) => WelcomeScreen()}
 
         //home: WelcomeScreen(), //SplashScrren() The Android Native Splash is in Use,
->>>>>>> 3589b852ff5dfc60af01a419d6e3bb8c297d6244
     );
   }
 }
