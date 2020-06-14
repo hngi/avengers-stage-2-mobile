@@ -50,13 +50,13 @@ List<IQQuestion> iqQuestionBank = [
   IQQuestion(
       "Find the answer that best completes the analogy: Book is to Reading as Fork is to: ",
       ["Drawing", "Writing", "Stirring", "Eating"],
-      "Stirring"),
+      "Eating"),
   // This question has two correct answers.
   IQQuestion(
       "Which of the following can be arranged into a 5-letter English word? ",
       ["H R G S T", "R I L S A", "T O O M T", "W Q R G S"],
       "R I L S A"),
-  IQQuestion("What number best completes the analogy: 8:4 as 10:?",
+  IQQuestion("What number best completes the analogy: 8 : 4 as 10 : ?",
       ["3", "7", "24", "5"], "5"),
   IQQuestion(
       "One rabbit saw 6 elephants while going towards the river. Every elephant saw 2 monkeys going towards the river. Every monkey holds one turtle in their hand. How many animals are going towards the river?",
@@ -66,13 +66,13 @@ List<IQQuestion> iqQuestionBank = [
       "In the series: 12, 11, 13, 12, 14, 13, … What number should come next?",
       ["10", "16", "13", "15"],
       "15"),
-  IQQuestion("Melt : Liquid :: Freeze : ?", ["Ice", "Solid", "Condense", "Push"],
-      "Solid"),
+  IQQuestion("Melt : Liquid :: Freeze : ?",
+      ["Ice", "Solid", "Condense", "Push"], "Solid"),
 
   IQQuestion("Choose what number represents the Roman numeral: LXI ",
       ["51", "98", "61", "20"], "61"),
   IQQuestion("Hom many times can you subtract 10 from 100? ",
-      ["5 times ", "10 times", "1 times only", "100 times"], "1 times only"),
+      ["5 times ", "10 times", "1 time only", "100 times"], "1 times only"),
   IQQuestion("Which word does NOT belong with the others? ",
       ["index", "glossary", "chapter", "book"], "book"),
   IQQuestion("Pick the odd one out? ", ["Just", "Fair", "Equitable", "Biased"],
@@ -96,7 +96,8 @@ List<IQQuestion> iqQuestionBank = [
       ["Wing", "Fin", "Beak", "Rudder"], "Beak"),
   IQQuestion("Select the odd word from the given alternatives",
       ["Herb", "Flower", "Tree", "Shrub"], "Flower"),
-  IQQuestion("What is the result of 2+2*2-2/2 ?", ['2', '3', '4', '5'], "5"),
+  IQQuestion(
+      "What is the result of 2 + 2 * 2 - 2 / 2 ?", ['2', '3', '4', '5'], "5"),
   IQQuestion(
       "When Ashley was 15, her mother was 37. Now, her mother is twice her age. How old is Ashley?",
       ["30", "45", "37", "22"],
@@ -126,7 +127,7 @@ List<IQQuestion> iqQuestionBank = [
   IQQuestion(
       "All strawberries are cheap. No red coloured things are cheap.",
       [
-        "All stawberries are cheap",
+        "All strawberries are cheap",
         "Red coloured strawberries are not cheap",
         "All of the above",
         "None of the above"
@@ -138,13 +139,13 @@ List<IQQuestion> iqQuestionBank = [
     "False",
   ),
   IQQuestion(
-      "Mr.Kanu’s mother’s father-in-law’s only son’s only daughter’s son is Chike. How is Kanu related to Chike?",
+      "Mr. Kanu’s mother’s father-in-law’s only son’s only daughter’s son is Chike. How is Kanu related to Chike?",
       ["Uncle", "Nephew", "Father", "Cannot be determined"],
       "Uncle"),
   IQQuestion(
-      "Parts : Strap :: Wolf : ?", ["Flow", "Animal", "Wood", "Fox"], "Flow"),
+      "Parts : Strap  ::  Wolf : ?", ["Flow", "Animal", "Wood", "Fox"], "Flow"),
   IQQuestion("5:25:6: ?", ["36", "38", "49", "52"], "36"),
-  IQQuestion("7:10:8:11:9:12: ?", ["7", "12", "10", "13"], "10"),
+  IQQuestion("7 : 10 : 8 : 11 : 9 : 12 : ?", ["7", "12", "10", "13"], "10"),
   IQQuestion(
       "A woman said, “His brother’s father is the only son of my grandfather.” How is the woman related to this man?",
       ["Mother", "Aunt", "Sister", "Grandmother"],

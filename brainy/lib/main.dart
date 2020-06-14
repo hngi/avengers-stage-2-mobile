@@ -19,19 +19,19 @@ class MainThread extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: themeLight,
-      debugShowCheckedModeBanner: false,
-
-      home: //SplashScrren() The Android Native Splash is in Use,
-      HomeScreen(),
-
+        theme: themeLight,
+        debugShowCheckedModeBanner: false,
+        home: //SplashScreen() The Android Native Splash is in Use,
+            HomeScreen(),
         initialRoute: onBoardCount == 0 || onBoardCount == null
             ? 'onBoarding'
             : 'WelcomeScreen',
-        routes: { "onBoarding": (context) => OnBoarding(),
-          "WelcomeScreen": (context) => WelcomeScreen()}
+        routes: {
+          "onBoarding": (context) => OnBoarding(),
+          "WelcomeScreen": (context) => WelcomeScreen()
+        }
 
         //home: WelcomeScreen(), //SplashScreen() The Android Native Splash is in Use,
-    );
+        );
   }
 }

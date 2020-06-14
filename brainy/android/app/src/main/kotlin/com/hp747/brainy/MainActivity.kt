@@ -1,4 +1,4 @@
-package com.example.brainy
+package com.hp747.brainy
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
