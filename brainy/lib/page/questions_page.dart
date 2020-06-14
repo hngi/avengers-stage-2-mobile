@@ -52,7 +52,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
 //      Throw an alert to the user that evaluation has finished
         IQEnds(
           msg:
-              'You have successfully completed the test proceed for the result',
+              'You have successfully completed the test. Proceed to the result',
           correctScore: brainy.correctResponse,
           wrongScore: brainy.wrongResponse,
           totalScore: brainy.totalScore,
